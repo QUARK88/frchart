@@ -1,0 +1,496 @@
+{
+    "Action Française": [
+        "rc",
+        "https://en.wikipedia.org/wiki/Action_Française#Founding_and_rise_(1898–1914)",
+        1025,
+        775,
+        [
+            [
+                "Anti-Dreyfus Sentiment"
+            ],
+            [
+                "French Nationalism"
+            ],
+            [
+                "Fusionist Orléanists",
+                "Dynastic Allegiance"
+            ],
+            [
+                "Integralism"
+            ],
+            [
+                "Political Catholicism"
+            ]
+        ]
+    ],
+    "Anti-Clericalism": [
+        "gi",
+        "https://en.wikipedia.org/wiki/Anti-clericalism#Third_Republic",
+        350,
+        525,
+        [
+            [
+                "Jacobinism"
+            ]
+        ]
+    ],
+    "Anti-Dreyfus Sentiment": [
+        "ri",
+        "https://en.wikipedia.org/wiki/Dreyfus_affair",
+        1100,
+        700
+    ],
+    "Anti-Parliamentarism": [
+        "ni",
+        "Parliamentary_system#Disadvantages",
+        850,
+        900
+    ],
+    "Anti-Prussian Sentiment": [
+        "gi",
+        "https://en.wikipedia.org/wiki/Anti-German_sentiment",
+        325,
+        625
+    ],
+    "Anti-Secularism": [
+        "ri",
+        "https://en.wikipedia.org/wiki/Catholic_Church_in_France",
+        950,
+        425
+    ],
+    "Bakuninism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Social_anarchism",
+        100,
+        475,
+        [
+            [
+                "Mutualism"
+            ]
+        ]
+    ],
+    "Blanquism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Blanquism",
+        300,
+        450,
+        [
+            [
+                "Anti-Clericalism"
+            ],
+            [
+                "Jacobinism"
+            ],
+            [
+                "Saint-Simonian Utopianism"
+            ]
+        ]
+    ],
+    "Bonapartists": [
+        "cf",
+        "https://en.wikipedia.org/wiki/Bonapartists_(political_party)",
+        525,
+        450,
+        [
+            [
+                "Boring Liberal Stuff"
+            ],
+            [
+                "Caesarism"
+            ],
+            [
+                "Constitutional Monarchism"
+            ],
+            [
+                "Saint-Simonian Utopianism"
+            ]
+        ]
+    ],
+    "Boring Liberal Stuff": [
+        "ci",
+        "https://en.wikipedia.org/wiki/Liberalism",
+        675,
+        525
+    ],
+    "Boulangists": [
+        "nf",
+        "https://en.wikipedia.org/wiki/Georges_Ernest_Boulanger",
+        475,
+        550,
+        [
+            [
+                "Anti-Parliamentarism"
+            ],
+            [
+                "Anti-Prussian Sentiment"
+            ],
+            [
+                "Bonapartists"
+            ],
+            [
+                "French Nationalism"
+            ],
+            [
+                "Institutional Revisionism"
+            ]
+        ]
+    ],
+    "Bourbon Loyalism": [
+        "ri",
+        "https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France",
+        1100,
+        425
+    ],
+    "Caesarism": [
+        "ci",
+        "https://en.wikipedia.org/wiki/Caesarism",
+        525,
+        375
+    ],
+    "Central Revolutionary Committee": [
+        "lf",
+        "https://en.wikipedia.org/wiki/Central_Revolutionary_Committee",
+        250,
+        775,
+        [
+            [
+                "Blanquism"
+            ]
+        ]
+    ],
+    "Communards": [
+        "lf",
+        "https://en.wikipedia.org/wiki/Communards",
+        200,
+        525,
+        [
+            [
+                "Anti-Prussian Sentiment"
+            ],
+            [
+                "Bakuninism"
+            ],
+            [
+                "Blanquism"
+            ],
+            [
+                "Mutualism"
+            ]
+        ]
+    ],
+    "Constitutional Monarchism": [
+        "ci",
+        "https://en.wikipedia.org/wiki/Constitutional_monarchy",
+        675,
+        375
+    ],
+    "Federation of the Socialist Workers": [
+        "lf",
+        "https://en.wikipedia.org/wiki/Federation_of_the_Socialist_Workers_of_France",
+        100,
+        625,
+        [
+            [
+                "Communards"
+            ],
+            [
+                "Possibilism"
+            ]
+        ]
+    ],
+    "French Nationalism": [
+        "ni",
+        "https://en.wikipedia.org/wiki/French_nationalism#1814-1914",
+        850,
+        825
+    ],
+    "French Section of the Workers' International": [
+        "lf",
+        "https://en.wikipedia.org/wiki/French_Section_of_the_Workers'_International",
+        175,
+        850,
+        [
+            [
+                "French Socialist Party"
+            ]
+        ]
+    ],
+    "French Socialist Party": [
+        "lf",
+        "https://en.wikipedia.org/wiki/French_Socialist_Party_(1902)",
+        100,
+        775,
+        [
+            [
+                "French Workers' Party"
+            ],
+            [
+                "Central Revolutionary Committee"
+            ]
+        ]
+    ],
+    "French Workers' Party": [
+        "lf",
+        "https://en.wikipedia.org/wiki/French_Workers' Party",
+        100,
+        700,
+        [
+            [
+                "Federation of the Socialist Workers"
+            ],
+            [
+                "Marxism"
+            ]
+        ]
+    ],
+    "Fusionist Orléanists": [
+        "df",
+        "https://en.wikipedia.org/wiki/Orléanist#Fusion_and_restoration_project",
+        850,
+        550,
+        [
+            [
+                "French Nationalism",
+                [
+                    "Opposition to Spanish Claims"
+                ]
+            ],
+            [
+                "Legitimists",
+                "Lack of Bourbon Heir"
+            ],
+            [
+                "Pure Orléanists"
+            ]
+        ]
+    ],
+    "Institutional Revisionism": [
+        "ni",
+        "",
+        425,
+        475
+    ],
+    "Integralism": [
+        "ri",
+        "https://en.wikipedia.org/wiki/Integral_nationalism",
+        1025,
+        875,
+        [
+            [
+                "Anti-Parliamentarism"
+            ],
+            [
+                "French Nationalism"
+            ],
+            [
+                "Political Catholicism"
+            ]
+        ]
+    ],
+    "Jacobinism": [
+        "gi",
+        "https://en.wikipedia.org/wiki/Jacobinism",
+        375,
+        375
+    ],
+    "Legitimists": [
+        "rf",
+        "https://en.wikipedia.org/wiki/Legitimists",
+        1025,
+        500,
+        [
+            [
+                "Anti-Secularism"
+            ],
+            [
+                "Bourbon Loyalism"
+            ],
+            [
+                "Ultra-Royalists"
+            ]
+        ]
+    ],
+    "Liberal Action": [
+        "df",
+        "https://en.wikipedia.org/wiki/Popular_Liberal_Action",
+        725,
+        675,
+        [
+            [
+                "Boring Liberal Stuff"
+            ],
+            [
+                "Fusionist Orléanists",
+                "Rerum Novarum"
+            ],
+            [
+                "Pro-Dreyfus Sentiment"
+            ],
+            [
+                "Social Catholicism"
+            ]
+        ]
+    ],
+    "Liberal Union": [
+        "cf",
+        "",
+        600,
+        775,
+        [
+            [
+                "Moderate Republicans"
+            ]
+        ]
+    ],
+    "Marxism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Marxism",
+        175,
+        725
+    ],
+    "Moderate Republicans": [
+        "gf",
+        "https://en.wikipedia.org/wiki/Moderate_Republicans_(France,_1871–1901)",
+        450,
+        650,
+        [
+            [
+                "Anti-Clericalism"
+            ],
+            [
+                "Boring Liberal Stuff"
+            ],
+            [
+                "Fusionist Orléanists",
+                "Decline of Monarchist Sentiment"
+            ],
+            [
+                "Progressivism"
+            ]
+        ]
+    ],
+    "Mutualism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Mutualism_(economic_theory)#Formulation_by_Proudhon",
+        175,
+        450,
+        [
+            [
+                "Saint-Simonian Utopianism"
+            ]
+        ]
+    ],
+    "Political Catholicism": [
+        "ri",
+        "",
+        1100,
+        825
+    ],
+    "Possibilism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Possibilism_(politics)",
+        100,
+        550
+    ],
+    "Pro-Dreyfus Sentiment": [
+        "ni",
+        "https://en.wikipedia.org/wiki/Dreyfus_affair",
+        575,
+        700
+    ],
+    "Progressivism": [
+        "gi",
+        "https://en.wikipedia.org/wiki/Progressivism",
+        350,
+        775
+    ],
+    "Pure Orléanists": [
+        "cf",
+        "https://en.wikipedia.org/wiki/Orléanist",
+        675,
+        450,
+        [
+            [
+                "Boring Liberal Stuff"
+            ],
+            [
+                "Constitutional Monarchism"
+            ]
+        ]
+    ],
+    "Radical-Socialist Party": [
+        "gc",
+        "https://en.wikipedia.org/wiki/Radical_Party_(France)",
+        475,
+        775,
+        [
+            [
+                "Republican Union"
+            ]
+        ]
+    ],
+    "Radical Republicans": [
+        "lf",
+        "",
+        200,
+        650,
+        [
+            [
+                "Anti-Clericalism"
+            ],
+            [
+                "Anti-Prussian Sentiment"
+            ],
+            [
+                "Communards",
+                "Amnestied Minority"
+            ],
+            [
+                "Progressivism"
+            ]
+        ]
+    ],
+    "Republican Union": [
+        "lf",
+        "https://en.wikipedia.org/wiki/Republican_Union_(France)",
+        325,
+        700,
+        [
+            [
+                "Anti-Prussian Sentiment"
+            ],
+            [
+                "Moderate Republicans"
+            ],
+            [
+                "Progressivism"
+            ],
+            [
+                "Radical Republicans"
+            ]
+        ]
+    ],
+    "Saint-Simonian Utopianism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Henri_de_Saint-Simon#Ideas",
+        225,
+        375
+    ],
+    "Social Catholicism": [
+        "di",
+        "https://en.wikipedia.org/wiki/Catholic_social_teaching",
+        800,
+        725
+    ],
+    "Ultra-Royalists": [
+        "rf",
+        "https://en.wikipedia.org/wiki/Ultra-royalist",
+        1025,
+        375,
+        [
+            [
+                "Anti-Secularism"
+            ]
+        ]
+    ]
+}

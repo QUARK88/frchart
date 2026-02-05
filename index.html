@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logos/icon.png">
+    <title>FRChart</title>
+    <meta property="og:site_name" content="quark88.github.io/frchart">
+    <meta property="og:title" content="FRChart">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Interactive flowchart of french political history.">
+    <meta property="og:url" content="https://quark88.github.io/frchart">
+    <meta property="og:image" content="https://quark88.github.io/frchart/assets/logos/embed.png">
+    <meta name="theme-color" content="#00a0ff" data-react-helmet="true">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="warning">
+        <div id="warningTitle">WARNING</div>
+        <div id="warningText">This is far from completed and heavily subject to change. It is only for prototyping purposes and not to be taken seriously.</div>
+        <button id="warningButton">OK</button>
+    </div>
+    <div id="controls">
+        <label class="theme-toggle">
+            <input type="checkbox" id="themeToggle">
+            <span class="theme-toggle__icon"></span>
+        </label>
+        <input id="zoomSlider" type="range">
+    </div>
+    <div id="zoomZone">
+        <section id="title">French Political History (1851-2026)</section>
+        <section id="nodesLegend">
+            <div class="nodesLegend__line">
+                <h2>Colors:</h2>
+                <div class="nodesLegend__grid">
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Left-wing_politics" target="_blank" title="Leftist">
+                        <div class="node__shape node__shape--left node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Left-Wing</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centre-left_politics" target="_blank" title="Center-Leftist">
+                        <div class="node__shape node__shape--centerLeft node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Center-Left</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centrism" target="_blank" title="Centrist">
+                        <div class="node__shape node__shape--center node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Centrist</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centre-right_politics" target="_blank" title="Center-Rightist">
+                        <div class="node__shape node__shape--centerRight node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Center-Right</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Right-wing_politics" target="_blank" title="Rightist">
+                        <div class="node__shape node__shape--right node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Right-Wing</div>
+                    </a>
+                    <a class="nodeInfo" href="" target="_blank" title="Non-sided or multi-sided">
+                        <div class="node__shape node__shape--grey node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Non-Sided or Mutli-Sided</div>
+                    </a>
+                </div>
+            </div>
+            <div class="nodesLegend__line">
+                <h2>Shapes:</h2>
+                <div class="nodesLegend__grid">
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Politics_of_France" target="_blank" title="Political Ideology">
+                        <div class="node__shape node__shape--grey node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Political Ideology</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/List_of_political_parties_in_France#Historical_parties" target="_blank" title="Political Faction/Party">
+                        <div class="node__shape node__shape--grey node__shape--faction"></div>
+                        <div class="nodeInfo__text">Political Faction/Party</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/List_of_political_parties_in_France" target="_blank" title="Current (2026) Faction/Party" style="gap:16px!important">
+                        <div class="node__shape node__shape--grey node__shape--current" style="transform:rotate(45deg)!important"></div>
+                        <div class="nodeInfo__text">Current (2026) Faction/Party</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="eventsLegend">
+            <h2>Approximate eras timeline</h2>
+            <a class="event" href="https://en.wikipedia.org/wiki/Franco-Prussian_War" target="_blank" title="Franco-Prussian War">
+                <h2 class="event__text">Franco-Prussian War</h2>
+                <img class="event__image" src="./assets/events/Franco-Prussian War.jpg">
+            </a>
+            <a class="event" href="https://en.wikipedia.org/wiki/Dreyfus_affair" target="_blank" title="The Dreyfus Affair">
+                <h2 class="event__text">The Dreyfus Affair</h2>
+                <img class="event__image" src="./assets/events/Dreyfus Affair.jpg">
+            </a>
+        </section>
+        <section id="relatedSites">
+            Related projects:
+            <a class="relatedSite" target="_blank" href="https://quark88.github.io/canchart">
+                <img class="relatedSite__icon" src="https://raw.githubusercontent.com/QUARK88/canchart/refs/heads/main/assets/logos/embed.png">
+                CanChart
+            </a>
+            <a class="relatedSite" target="_blank" href="https://quark88.github.io/uschart">
+                <img class="relatedSite__icon" src="https://raw.githubusercontent.com/QUARK88/uschart/refs/heads/main/assets/logos/embed.png">
+                USChart
+            </a>
+        </section>
+        <section id="chart">
+        </section>
+        <svg id="arrows"></svg>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
