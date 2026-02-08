@@ -1,3 +1,9 @@
+let UNDO_STACK = []
+let REDO_STACK = []
+const MAX_UNDO = 50
+let EDIT_MODE = true
+let NODE_DATA = null
+const GRID = 25
 const toggle = document.getElementById("themeToggle")
 const warning = document.getElementById("warning")
 const warningButton = document.getElementById("warningButton")
@@ -34,54 +40,124 @@ const arrows = document.getElementById("arrows")
 fetch("./nodes.json")
     .then(r => r.json())
     .then(data => {
-        renderNodes(data)
-        renderArrows(data)
+        NODE_DATA = data
+        render()
     })
+function pushUndoState() {
+    UNDO_STACK.push(JSON.parse(JSON.stringify(NODE_DATA)))
+    if (UNDO_STACK.length > MAX_UNDO) UNDO_STACK.shift()
+}
+function render() {
+    chart.innerHTML = ""
+    arrows.innerHTML = ""
+    renderNodes(NODE_DATA)
+    renderArrows(NODE_DATA)
+    if (EDIT_MODE) enableDragging()
+}
+function toggleEditMode() {
+    EDIT_MODE = !EDIT_MODE
+    document.body.classList.toggle("editing", EDIT_MODE)
+    render()
+}
+document.addEventListener("keydown", e => {
+    if (!EDIT_MODE) return
+    if ((e.ctrlKey || e.metaKey) && e.key === "z") {
+        e.preventDefault()
+        if (!UNDO_STACK.length) return
+        REDO_STACK.push(JSON.parse(JSON.stringify(NODE_DATA)))
+        NODE_DATA = UNDO_STACK.pop()
+        render()
+    }
+    if ((e.ctrlKey || e.metaKey) && e.key === "y") {
+        e.preventDefault()
+        if (!REDO_STACK.length) return
+        UNDO_STACK.push(JSON.parse(JSON.stringify(NODE_DATA)))
+        NODE_DATA = REDO_STACK.pop()
+        render()
+    }
+})
+document.addEventListener("click", e => {
+    if (!EDIT_MODE) return
+    const node = e.target.closest(".node")
+    if (!node) return
+    e.preventDefault()
+    e.stopPropagation()
+})
+function enableDragging() {
+    document.querySelectorAll(".node").forEach(el => {
+        let sx, sy, ox, oy, key, moved = false
+        el.onmousedown = e => {
+            pushUndoState()
+            REDO_STACK.length = 0
+            if (!EDIT_MODE) return
+            e.preventDefault()
+            key = el.dataset.key
+            sx = e.clientX
+            sy = e.clientY
+            ox = NODE_DATA[key][X]
+            oy = NODE_DATA[key][Y]
+            moved = false
+            document.onmousemove = ev => {
+                const dx = Math.round((ev.clientX - sx) / GRID) * GRID
+                const dy = Math.round((ev.clientY - sy) / GRID) * GRID
+                if (dx || dy) {
+                    NODE_DATA[key][X] = ox + dx
+                    NODE_DATA[key][Y] = oy + dy
+                    el.style.left = NODE_DATA[key][X] + "px"
+                    el.style.top = NODE_DATA[key][Y] + "px"
+                    moved = true
+                }
+            }
+            document.onmouseup = () => {
+                document.onmousemove = null
+                document.onmouseup = null
+                if (moved) render()
+            }
+        }
+    })
+}
+function copyUpdatedJSON() {
+    navigator.clipboard.writeText(JSON.stringify(NODE_DATA, null, 4))
+}
 function renderNodes(data) {
     Object.entries(data).forEach(([name, node]) => {
         const type = node[TYPE]
         const types = []
-        const isPortrait = type[1] === "p"
         const shape = document.createElement("a")
-        shape.classList.add(isPortrait ? "portrait__shape" : "node__shape")
+        shape.draggable = false
+        shape.classList.add("node__shape")
         switch (type[0]) {
-            case "l": shape.classList.add(isPortrait ? "portrait__shape--left" : "node__shape--left"); types.push("Leftist"); break
-            case "g": shape.classList.add(isPortrait ? "portrait__shape--centerLeft" : "node__shape--centerLeft"); types.push("Center-Leftist"); break
-            case "c": shape.classList.add(isPortrait ? "portrait__shape--center" : "node__shape--center"); types.push("Centrist"); break
-            case "d": shape.classList.add(isPortrait ? "portrait__shape--centerRight" : "node__shape--centerRight"); types.push("Center-Rightist"); break
-            case "r": shape.classList.add(isPortrait ? "portrait__shape--right" : "node__shape--right"); types.push("Rightist"); break
-            case "n": shape.classList.add(isPortrait ? "portrait__shape--grey" : "node__shape--grey"); types.push("Non/Multi-Sided"); break
+            case "l": shape.classList.add("node__shape--left"); types.push("Leftist"); break
+            case "g": shape.classList.add("node__shape--centerLeft"); types.push("Center-Leftist"); break
+            case "c": shape.classList.add("node__shape--center"); types.push("Centrist"); break
+            case "d": shape.classList.add("node__shape--centerRight"); types.push("Center-Rightist"); break
+            case "r": shape.classList.add("node__shape--right"); types.push("Rightist"); break
+            case "n": shape.classList.add("node__shape--grey"); types.push("Non/Multi-Sided"); break
         }
-        if (!isPortrait) {
-            switch (type[1]) {
-                case "i": shape.classList.add("node__shape--ideology"); types.push("Ideology"); break
-                case "f": shape.classList.add("node__shape--faction"); types.push("Faction/Party"); break
-                case "c": shape.classList.add("node__shape--current"); types.push("Current Faction/Party"); break
-            }
-        } else {
-            types.push("Figure")
+        switch (type[1]) {
+            case "i": shape.classList.add("node__shape--ideology"); types.push("Ideology"); break
+            case "f": shape.classList.add("node__shape--faction"); types.push("Faction/Party"); break
+            case "c": shape.classList.add("node__shape--current"); types.push("Current Faction/Party"); break
         }
         title = `${name}\n\n${types[0]} ${types[1]}`
         const container = document.createElement("a")
         container.className = "node"
+        container.dataset.key = name
         container.style.left = node[X] + "px"
         container.style.top = node[Y] + "px"
         container.title = title
         const text = document.createElement("a")
-        text.className = isPortrait ? "portrait__text" : "node__text"
+        text.className = "node__text"
         text.textContent = name
         text.title = title
+        text.draggable = false
         if (node[URL]) {
             text.href = node[URL]
             text.target = "_blank"
             shape.href = node[URL]
             shape.target = "_blank"
-        }
-        if (isPortrait) {
-            shape.style.backgroundImage =
-                `url("./assets/portraits/${encodeURIComponent(name)}.jpg")`
-        } else if (name.length > 18) {
-            text.style.width = name.length > 36 ? "128px" : "112px"
+        } if (name.length > 18) {
+            text.style.width = name.length > 36 ? "128px" : "108px"
         }
         container.appendChild(text)
         container.appendChild(shape)
@@ -238,9 +314,9 @@ function renderArrows(data) {
                 const midX = (x1 + x2) / 2
                 const midY = (y1 + y2) / 2
                 const fo = document.createElementNS("http://www.w3.org/2000/svg", "foreignObject")
-                fo.setAttribute("x", midX - 44)
+                fo.setAttribute("x", midX - 36)
                 fo.setAttribute("y", midY - 64)
-                fo.setAttribute("width", 88)
+                fo.setAttribute("width", 72)
                 fo.setAttribute("height", 128)
                 const div = document.createElement("div")
                 div.className = "arrow__text"

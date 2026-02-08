@@ -47,6 +47,11 @@ html {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+body.editing .node__shape,
+body.editing .node__text {
+    cursor: move !important;
+}
+
 #warning {
     position: fixed;
     top: 0;
@@ -83,13 +88,28 @@ html {
 
 #controls {
     position: fixed;
-    display: flex;
+    display: grid;
+    grid-template-columns: 64px 128px;
     align-items: center;
     gap: 16px;
     top: 16px;
     left: 16px;
     height: 48px;
     z-index: 1000;
+}
+
+#controls button {
+    height: 48px;
+    width: 64px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--fg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 .theme-toggle {
@@ -116,12 +136,14 @@ html {
 }
 
 .theme-toggle:hover .theme-toggle__icon,
-#warningButton:hover {
+#warningButton:hover,
+#controls button:hover {
     transform: scale(1.05);
 }
 
 .theme-toggle:active .theme-toggle__icon,
-#warningButton:active {
+#warningButton:active,
+#controls button:active {
     transform: scale(0.95);
 }
 
@@ -158,16 +180,11 @@ html {
 
 #zoomZone {
     position: relative;
-    width: 1450px;
-    height: 1125px;
+    width: 1500px;
+    height: 1225px;
     z-index: 0;
     margin: 0;
     padding: 0;
-    background-image:
-        linear-gradient(#80808020 1px, transparent 1px),
-        linear-gradient(90deg, #80808020 1px, transparent 1px);
-    background-size: 25px 25px;
-    background-position: -0.5px -0.5px;
 }
 
 #title {
@@ -244,7 +261,7 @@ html {
     display: flex;
     align-items: center;
     font-size: 16px;
-    width: 104px;
+    width: 96px;
     height: 36px;
     text-align: left;
 }
@@ -254,8 +271,8 @@ html {
     display: flex;
     flex-direction: column;
     top: 136px;
-    left: 1200px;
-    gap: 96px;
+    left: 1250px;
+    gap: 128px;
     font-size: 24px;
     z-index: 2;
     width: 192px;
@@ -296,7 +313,7 @@ html {
     display: flex;
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 16px;
+    font-size: 15px;
     z-index: 3;
     width: 80px;
     justify-content: center;
@@ -354,51 +371,6 @@ html {
     transform: translate(-50%, -50%) rotate(45deg) !important;
 }
 
-.portrait__text {
-    display: block;
-    position: absolute;
-    transform: translate(-50%, calc(-50% + 54px));
-    font-size: 16px;
-    z-index: 3;
-    width: 128px;
-}
-
-.portrait__shape {
-    display: block;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 64px;
-    height: 80px;
-    z-index: 3;
-    border-radius: 6px;
-    background-position: center;
-    background-size: cover;
-}
-
-.portrait__shape--grey {
-    border: solid 3px var(--grey);
-}
-
-.portrait__shape--left {
-    border: solid 3px var(--left);
-}
-
-.portrait__shape--centerLeft {
-    border: solid 3px var(--centerLeft);
-}
-
-.portrait__shape--center {
-    border: solid 3px var(--center);
-}
-
-.portrait__shape--centerRight {
-    border: solid 3px var(--centerRight);
-}
-
-.portrait__shape--right {
-    border: solid 3px var(--right);
-}
-
 #arrows {
     position: absolute;
     top: 0;
@@ -444,7 +416,7 @@ html {
     text-align: center;
     white-space: normal;
     pointer-events: none;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .arrowhead {

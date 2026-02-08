@@ -2,7 +2,7 @@
     "Action Française": [
         "rc",
         "https://en.wikipedia.org/wiki/Action_Française#Founding_and_rise_(1898–1914)",
-        1025,
+        1050,
         775,
         [
             [
@@ -26,13 +26,13 @@
     "Anti-Boulangism": [
         "ci",
         "",
-        600,
-        725
+        675,
+        750
     ],
     "Anti-Clericalism": [
         "gi",
         "https://en.wikipedia.org/wiki/Anti-clericalism#Third_Republic",
-        350,
+        375,
         550,
         [
             [
@@ -43,25 +43,25 @@
     "Anti-Dreyfus Sentiment": [
         "ri",
         "https://en.wikipedia.org/wiki/Dreyfus_affair",
-        1100,
-        700
+        1125,
+        725
     ],
     "Anti-Parliamentarism": [
         "ni",
         "Parliamentary_system#Disadvantages",
-        850,
+        925,
         900
     ],
     "Anti-Prussian Sentiment": [
         "gi",
         "https://en.wikipedia.org/wiki/Anti-German_sentiment",
-        325,
+        350,
         625
     ],
     "Anti-Secularism": [
         "ri",
         "https://en.wikipedia.org/wiki/Catholic_Church_in_France",
-        950,
+        975,
         425
     ],
     "Bakuninism": [
@@ -78,7 +78,7 @@
     "Blanquism": [
         "li",
         "https://en.wikipedia.org/wiki/Blanquism",
-        300,
+        325,
         450,
         [
             [
@@ -86,16 +86,13 @@
             ],
             [
                 "Jacobinism"
-            ],
-            [
-                "Saint-Simonian Utopianism"
             ]
         ]
     ],
     "Bonapartists": [
         "cf",
         "https://en.wikipedia.org/wiki/Bonapartists_(political_party)",
-        525,
+        550,
         450,
         [
             [
@@ -111,14 +108,14 @@
                 "Plebiscitary Populism"
             ],
             [
-                "Saint-Simonian Utopianism"
+                "Saint-Simonianism"
             ]
         ]
     ],
     "Boulangists": [
         "nf",
         "https://en.wikipedia.org/wiki/Georges_Ernest_Boulanger",
-        475,
+        500,
         550,
         [
             [
@@ -147,13 +144,13 @@
     "Bourbon Loyalism": [
         "ri",
         "https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France",
-        1100,
+        1125,
         525
     ],
     "Caesarism": [
         "ci",
         "https://en.wikipedia.org/wiki/Caesarism",
-        525,
+        550,
         375,
         [
             [
@@ -164,8 +161,8 @@
     "Central Revolutionary Committee": [
         "lf",
         "https://en.wikipedia.org/wiki/Central_Revolutionary_Committee",
-        250,
-        775,
+        275,
+        800,
         [
             [
                 "Blanquism"
@@ -175,14 +172,14 @@
     "Classical Liberalism": [
         "ci",
         "https://en.wikipedia.org/wiki/Liberalism_and_radicalism_in_France",
-        675,
+        700,
         525
     ],
     "Communards": [
         "lf",
         "https://en.wikipedia.org/wiki/Communards",
         200,
-        525,
+        550,
         [
             [
                 "Anti-Prussian Sentiment"
@@ -201,20 +198,20 @@
     "Conservatism": [
         "di",
         "https://en.wikipedia.org/wiki/Conservatism_in_France",
-        850,
+        875,
         475
     ],
     "Constitutional Monarchism": [
         "ci",
         "https://en.wikipedia.org/wiki/Constitutional_monarchy",
-        675,
+        700,
         375
     ],
     "Federation of the Socialist Workers": [
         "lf",
         "https://en.wikipedia.org/wiki/Federation_of_the_Socialist_Workers_of_France",
         100,
-        625,
+        650,
         [
             [
                 "Communards"
@@ -227,14 +224,14 @@
     "French Nationalism": [
         "ni",
         "https://en.wikipedia.org/wiki/French_nationalism#1814-1914",
-        850,
+        900,
         825
     ],
     "French Section of the Workers' International": [
         "lf",
         "https://en.wikipedia.org/wiki/French_Section_of_the_Workers'_International",
         225,
-        925,
+        1000,
         [
             [
                 "French Socialist Party"
@@ -254,7 +251,7 @@
         "lf",
         "https://en.wikipedia.org/wiki/French_Socialist_Party_(1902)",
         100,
-        850,
+        900,
         [
             [
                 "French Workers' Party"
@@ -271,7 +268,7 @@
         "lf",
         "https://en.wikipedia.org/wiki/French_Workers' Party",
         100,
-        700,
+        750,
         [
             [
                 "Federation of the Socialist Workers"
@@ -284,7 +281,7 @@
     "Fusionist Orléanists": [
         "df",
         "https://en.wikipedia.org/wiki/Orléanist#Fusion_and_restoration_project",
-        850,
+        875,
         550,
         [
             [
@@ -306,13 +303,13 @@
     "Institutional Revisionism": [
         "ni",
         "https://en.wikipedia.org/wiki/Structural_fix",
-        575,
+        600,
         525
     ],
     "Integralism": [
         "ri",
         "https://en.wikipedia.org/wiki/Integral_nationalism",
-        1025,
+        1050,
         875,
         [
             [
@@ -329,19 +326,19 @@
     "Internationalism": [
         "li",
         "https://en.wikipedia.org/wiki/Second_International",
-        350,
-        850
+        300,
+        950
     ],
     "Jacobinism": [
         "gi",
         "https://en.wikipedia.org/wiki/Jacobinism",
-        375,
+        400,
         375
     ],
     "Legitimists": [
         "rf",
         "https://en.wikipedia.org/wiki/Legitimists",
-        1025,
+        1050,
         475,
         [
             [
@@ -361,7 +358,7 @@
     "Liberal Action": [
         "df",
         "https://en.wikipedia.org/wiki/Popular_Liberal_Action",
-        725,
+        750,
         675,
         [
             [
@@ -382,8 +379,8 @@
     "Liberal Union": [
         "df",
         "https://en.wikipedia.org/wiki/Progressive_Republicans_(France)#Liberal_Republican_Union",
-        675,
-        800,
+        725,
+        825,
         [
             [
                 "Anti-Boulangism"
@@ -397,13 +394,13 @@
         "li",
         "https://en.wikipedia.org/wiki/Marxism",
         200,
-        725
+        775
     ],
     "Moderate Republicans": [
         "gf",
         "https://en.wikipedia.org/wiki/Moderate_Republicans_(France,_1871–1901)",
         450,
-        650,
+        700,
         [
             [
                 "Anti-Clericalism"
@@ -414,33 +411,30 @@
             [
                 "Fusionist Orléanists",
                 "Decline of Monarchist Sentiment"
-            ],
-            [
-                "Progressivism"
             ]
         ]
     ],
     "Mutualism": [
         "li",
         "https://en.wikipedia.org/wiki/Mutualism_(economic_theory)#Formulation_by_Proudhon",
-        200,
+        175,
         450,
         [
             [
-                "Saint-Simonian Utopianism"
+                "Saint-Simonianism"
             ]
         ]
     ],
     "Plebiscitary Populism": [
         "ni",
         "https://en.wikipedia.org/wiki/Liberalism_and_radicalism_in_France",
-        425,
+        450,
         475
     ],
     "Political Catholicism": [
         "ri",
         "",
-        1100,
+        1125,
         825
     ],
     "Possibilism": [
@@ -452,30 +446,24 @@
     "Pro-Dreyfus Sentiment": [
         "ni",
         "https://en.wikipedia.org/wiki/Dreyfus_affair",
-        550,
-        675
+        825,
+        725
     ],
     "Progressive Republicans": [
         "cf",
         "https://en.wikipedia.org/wiki/Progressive_Republicans_(France)",
-        475,
-        725,
+        550,
+        775,
         [
             [
                 "Moderate Republicans"
             ]
         ]
     ],
-    "Progressivism": [
-        "gi",
-        "https://en.wikipedia.org/wiki/Progressivism",
-        350,
-        775
-    ],
     "Pure Orléanists": [
         "cf",
         "https://en.wikipedia.org/wiki/Orléanist",
-        675,
+        700,
         450,
         [
             [
@@ -486,11 +474,22 @@
             ]
         ]
     ],
+    "Radical Liberalism": [
+        "gi",
+        "",
+        475,
+        625,
+        [
+            [
+                "Classical Liberalism"
+            ]
+        ]
+    ],
     "Radical-Socialist Party": [
         "gc",
         "https://en.wikipedia.org/wiki/Radical_Party_(France)",
-        475,
-        800,
+        450,
+        825,
         [
             [
                 "Republican Union"
@@ -501,7 +500,7 @@
         "lf",
         "",
         200,
-        650,
+        700,
         [
             [
                 "Anti-Clericalism"
@@ -514,30 +513,30 @@
                 "Amnestied Minority"
             ],
             [
-                "Progressivism"
+                "Radical Liberalism"
+            ],
+            [
+                "Utopian Socialism"
             ]
         ]
     ],
     "Reactionaryism": [
         "ri",
         "https://en.wikipedia.org/wiki/Reactionary",
-        1100,
+        1125,
         425
     ],
     "Republican Union": [
         "lf",
         "https://en.wikipedia.org/wiki/Republican_Union_(France)",
-        325,
-        700,
+        350,
+        725,
         [
             [
                 "Anti-Prussian Sentiment"
             ],
             [
                 "Moderate Republicans"
-            ],
-            [
-                "Progressivism"
             ],
             [
                 "Radical Republicans"
@@ -548,14 +547,14 @@
         "lf",
         "https://en.wikipedia.org/wiki/Revolutionary_Socialist_Workers'_Party_(France)",
         225,
-        850,
+        900,
         [
             [
                 "Syndicalism"
             ]
         ]
     ],
-    "Saint-Simonian Utopianism": [
+    "Saint-Simonianism": [
         "li",
         "https://en.wikipedia.org/wiki/Henri_de_Saint-Simon#Ideas",
         225,
@@ -564,25 +563,25 @@
     "Social Catholicism": [
         "di",
         "https://en.wikipedia.org/wiki/Catholic_social_teaching",
-        800,
-        725
+        775,
+        550
     ],
     "Social Democracy": [
         "li",
         "https://en.wikipedia.org/wiki/Social_democracy",
         100,
-        925
+        1000
     ],
     "Syndicalism": [
         "li",
         "https://en.wikipedia.org/wiki/Syndicalism",
         150,
-        775
+        825
     ],
     "Ultra-Royalists": [
         "rf",
         "https://en.wikipedia.org/wiki/Ultra-royalist",
-        1025,
+        1050,
         375,
         [
             [
@@ -590,6 +589,17 @@
             ],
             [
                 "Reactionaryism"
+            ]
+        ]
+    ],
+    "Utopian Socialism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Utopian_socialism",
+        275,
+        550,
+        [
+            [
+                "Saint-Simonianism"
             ]
         ]
     ]

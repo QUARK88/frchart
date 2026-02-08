@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="editing">
     <div id="warning">
         <div id="warningTitle">WARNING</div>
         <div id="warningText">This is far from completed and heavily subject to change. It is only for prototyping purposes and not to be taken seriously.</div>
@@ -28,6 +28,9 @@
             <span class="theme-toggle__icon"></span>
         </label>
         <input id="zoomSlider" type="range">
+        <button onclick="toggleEditMode()">EDIT</button>
+        <button onclick="copyUpdatedJSON()">JSON</button>
+
     </div>
     <div id="zoomZone">
         <section id="title">French Political History (1851-2026)</section>
