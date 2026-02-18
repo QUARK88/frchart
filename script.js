@@ -26,7 +26,6 @@ if (localStorage.getItem("warned")) {
     warning.style.display = "none"
 }
 warningButton.addEventListener("click", () => {
-    console.log("Bruh")
     localStorage.setItem("warned", true)
     warning.style.display = "none"
 })

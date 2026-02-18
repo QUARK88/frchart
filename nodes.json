@@ -2,7 +2,7 @@
     "Action Française": [
         "rc",
         "https://en.wikipedia.org/wiki/Action_Française#Founding_and_rise_(1898–1914)",
-        1050,
+        1075,
         775,
         [
             [
@@ -43,7 +43,7 @@
     "Anti-Dreyfus Sentiment": [
         "ri",
         "https://en.wikipedia.org/wiki/Dreyfus_affair",
-        1125,
+        1150,
         725
     ],
     "Anti-Parliamentarism": [
@@ -61,14 +61,14 @@
     "Anti-Secularism": [
         "ri",
         "https://en.wikipedia.org/wiki/Catholic_Church_in_France",
-        975,
+        1000,
         425
     ],
     "Bakuninism": [
         "li",
         "https://en.wikipedia.org/wiki/Collectivist_anarchism",
-        100,
-        475,
+        125,
+        500,
         [
             [
                 "Mutualism"
@@ -144,7 +144,7 @@
     "Bourbon Loyalism": [
         "ri",
         "https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France",
-        1125,
+        1150,
         525
     ],
     "Caesarism": [
@@ -198,7 +198,7 @@
     "Conservatism": [
         "di",
         "https://en.wikipedia.org/wiki/Conservatism_in_France",
-        875,
+        900,
         475
     ],
     "Constitutional Monarchism": [
@@ -206,6 +206,17 @@
         "https://en.wikipedia.org/wiki/Constitutional_monarchy",
         700,
         375
+    ],
+    "Democratic Alliance": [
+        "cf",
+        "https://en.wikipedia.org/wiki/Democratic_Republican_Alliance",
+        550,
+        825,
+        [
+            [
+                "Progressive Republicans"
+            ]
+        ]
     ],
     "Federation of the Socialist Workers": [
         "lf",
@@ -281,7 +292,7 @@
     "Fusionist Orléanists": [
         "df",
         "https://en.wikipedia.org/wiki/Orléanist#Fusion_and_restoration_project",
-        875,
+        900,
         550,
         [
             [
@@ -309,7 +320,7 @@
     "Integralism": [
         "ri",
         "https://en.wikipedia.org/wiki/Integral_nationalism",
-        1050,
+        1075,
         875,
         [
             [
@@ -338,7 +349,7 @@
     "Legitimists": [
         "rf",
         "https://en.wikipedia.org/wiki/Legitimists",
-        1050,
+        1075,
         475,
         [
             [
@@ -358,8 +369,8 @@
     "Liberal Action": [
         "df",
         "https://en.wikipedia.org/wiki/Popular_Liberal_Action",
-        750,
-        675,
+        775,
+        650,
         [
             [
                 "Classical Liberalism"
@@ -377,9 +388,9 @@
         ]
     ],
     "Liberal Union": [
-        "df",
+        "cf",
         "https://en.wikipedia.org/wiki/Progressive_Republicans_(France)#Liberal_Republican_Union",
-        725,
+        700,
         825,
         [
             [
@@ -399,7 +410,7 @@
     "Moderate Republicans": [
         "gf",
         "https://en.wikipedia.org/wiki/Moderate_Republicans_(France,_1871–1901)",
-        450,
+        475,
         700,
         [
             [
@@ -425,6 +436,20 @@
             ]
         ]
     ],
+    "National Centre of Independents and Peasants": [
+        "df",
+        "https://en.wikipedia.org/wiki/National_Centre_of_Independents_and_Peasants",
+        800,
+        1125,
+        [
+            [
+                "Democratic Alliance"
+            ],
+            [
+                "Republican Party of Liberty"
+            ]
+        ]
+    ],
     "Plebiscitary Populism": [
         "ni",
         "https://en.wikipedia.org/wiki/Liberalism_and_radicalism_in_France",
@@ -434,14 +459,14 @@
     "Political Catholicism": [
         "ri",
         "",
-        1125,
+        1150,
         825
     ],
     "Possibilism": [
         "li",
         "https://en.wikipedia.org/wiki/Possibilism_(politics)",
         100,
-        550
+        575
     ],
     "Pro-Dreyfus Sentiment": [
         "ni",
@@ -452,8 +477,8 @@
     "Progressive Republicans": [
         "cf",
         "https://en.wikipedia.org/wiki/Progressive_Republicans_(France)",
-        550,
-        775,
+        575,
+        750,
         [
             [
                 "Moderate Republicans"
@@ -488,7 +513,7 @@
     "Radical-Socialist Party": [
         "gc",
         "https://en.wikipedia.org/wiki/Radical_Party_(France)",
-        450,
+        400,
         825,
         [
             [
@@ -523,14 +548,39 @@
     "Reactionaryism": [
         "ri",
         "https://en.wikipedia.org/wiki/Reactionary",
-        1125,
+        1150,
         425
+    ],
+    "Republican Federation": [
+        "df",
+        "https://en.wikipedia.org/wiki/Republican_Federation",
+        775,
+        900,
+        [
+            [
+                "Liberal Action"
+            ],
+            [
+                "Liberal Union"
+            ]
+        ]
+    ],
+    "Republican Party of Liberty": [
+        "df",
+        "https://en.wikipedia.org/wiki/Republican_Party_of_Liberty",
+        900,
+        1050,
+        [
+            [
+                "Republican Federation"
+            ]
+        ]
     ],
     "Republican Union": [
         "lf",
         "https://en.wikipedia.org/wiki/Republican_Union_(France)",
         350,
-        725,
+        750,
         [
             [
                 "Anti-Prussian Sentiment"
@@ -581,7 +631,7 @@
     "Ultra-Royalists": [
         "rf",
         "https://en.wikipedia.org/wiki/Ultra-royalist",
-        1050,
+        1075,
         375,
         [
             [

@@ -110,6 +110,8 @@ body.editing .node__text {
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s ease, transform 0.15s ease;
+    color: var(--bg);
+    text-shadow: none;
 }
 
 .theme-toggle {
@@ -270,9 +272,9 @@ body.editing .node__text {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 136px;
+    top: 160px;
     left: 1250px;
-    gap: 128px;
+    gap: 104px;
     font-size: 24px;
     z-index: 2;
     width: 192px;
