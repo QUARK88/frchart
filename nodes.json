@@ -32,7 +32,7 @@
     "Anti-Clericalism": [
         "gi",
         "https://en.wikipedia.org/wiki/Anti-clericalism#Third_Republic",
-        375,
+        350,
         550,
         [
             [
@@ -49,7 +49,7 @@
     "Anti-Parliamentarism": [
         "ni",
         "Parliamentary_system#Disadvantages",
-        900,
+        925,
         900
     ],
     "Anti-Prussian Sentiment": [
@@ -115,7 +115,7 @@
     "Boulangists": [
         "nf",
         "https://en.wikipedia.org/wiki/Georges_Ernest_Boulanger",
-        500,
+        475,
         550,
         [
             [
@@ -211,7 +211,7 @@
         "cf",
         "https://en.wikipedia.org/wiki/Democratic_Republican_Alliance",
         575,
-        850,
+        875,
         [
             [
                 "Progressive Republicans"
@@ -242,7 +242,7 @@
         "lf",
         "https://en.wikipedia.org/wiki/French_Section_of_the_Workers'_International",
         175,
-        1000,
+        975,
         [
             [
                 "French Socialist Party"
@@ -315,7 +315,7 @@
         "gf",
         "https://en.wikipedia.org/wiki/Independent_Radicals",
         475,
-        850,
+        875,
         [
             [
                 "Republican Union"
@@ -325,7 +325,7 @@
     "Institutional Revisionism": [
         "ni",
         "https://en.wikipedia.org/wiki/Structural_fix",
-        600,
+        575,
         525
     ],
     "Integralism": [
@@ -348,8 +348,8 @@
     "Internationalism": [
         "li",
         "https://en.wikipedia.org/wiki/Second_International",
-        275,
-        925
+        175,
+        875
     ],
     "Jacobinism": [
         "gi",
@@ -401,8 +401,8 @@
     "Liberal Union": [
         "cf",
         "https://en.wikipedia.org/wiki/Progressive_Republicans_(France)#Liberal_Republican_Union",
-        700,
-        800,
+        675,
+        825,
         [
             [
                 "Anti-Boulangism"
@@ -439,7 +439,7 @@
     "Mutualism": [
         "li",
         "https://en.wikipedia.org/wiki/Mutualism_(economic_theory)#Formulation_by_Proudhon",
-        175,
+        200,
         450,
         [
             [
@@ -451,7 +451,7 @@
         "df",
         "https://en.wikipedia.org/wiki/National_Centre_of_Independents_and_Peasants",
         800,
-        1525,
+        1400,
         [
             [
                 "Democratic Alliance"
@@ -460,6 +460,13 @@
                 "Republican Party of Liberty"
             ]
         ]
+    ],
+    "National Rally": [
+        "df",
+        "",
+        900,
+        2000,
+        []
     ],
     "Plebiscitary Populism": [
         "ni",
@@ -525,7 +532,7 @@
         "gc",
         "https://en.wikipedia.org/wiki/Radical_Party_(France)",
         375,
-        850,
+        875,
         [
             [
                 "Republican Union"
@@ -562,11 +569,25 @@
         1150,
         425
     ],
+    "Reconquête": [
+        "rf",
+        "",
+        1075,
+        2200,
+        []
+    ],
+    "Renaissance": [
+        "cf",
+        "",
+        700,
+        2150,
+        []
+    ],
     "Republican Federation": [
         "df",
         "https://en.wikipedia.org/wiki/Republican_Federation",
         775,
-        850,
+        875,
         [
             [
                 "Liberal Action"
@@ -580,7 +601,7 @@
         "df",
         "https://en.wikipedia.org/wiki/Republican_Party_of_Liberty",
         900,
-        1450,
+        1300,
         [
             [
                 "Republican Federation"
@@ -618,7 +639,7 @@
     "Saint-Simonianism": [
         "li",
         "https://en.wikipedia.org/wiki/Henri_de_Saint-Simon#Ideas",
-        225,
+        250,
         375
     ],
     "Social Catholicism": [
@@ -636,8 +657,8 @@
     "Syndicalism": [
         "li",
         "https://en.wikipedia.org/wiki/Syndicalism",
-        175,
-        900
+        250,
+        925
     ],
     "Ultra-Royalists": [
         "rf",

@@ -156,7 +156,7 @@ function renderNodes(data) {
             shape.href = node[URL]
             shape.target = "_blank"
         } if (name.length > 18) {
-            text.style.width = name.length > 36 ? "128px" : "108px"
+            text.style.width = name.length > 36 ? "112px" : "100px"
         }
         container.appendChild(text)
         container.appendChild(shape)
