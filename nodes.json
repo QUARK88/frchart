@@ -26,8 +26,8 @@
     "Anti-Boulangism": [
         "ci",
         "",
-        675,
-        750
+        625,
+        725
     ],
     "Anti-Clericalism": [
         "gi",
@@ -49,7 +49,7 @@
     "Anti-Parliamentarism": [
         "ni",
         "Parliamentary_system#Disadvantages",
-        925,
+        900,
         900
     ],
     "Anti-Prussian Sentiment": [
@@ -162,7 +162,7 @@
         "lf",
         "https://en.wikipedia.org/wiki/Central_Revolutionary_Committee",
         275,
-        800,
+        775,
         [
             [
                 "Blanquism"
@@ -210,8 +210,8 @@
     "Democratic Alliance": [
         "cf",
         "https://en.wikipedia.org/wiki/Democratic_Republican_Alliance",
-        550,
-        825,
+        575,
+        850,
         [
             [
                 "Progressive Republicans"
@@ -241,7 +241,7 @@
     "French Section of the Workers' International": [
         "lf",
         "https://en.wikipedia.org/wiki/French_Section_of_the_Workers'_International",
-        225,
+        175,
         1000,
         [
             [
@@ -262,7 +262,7 @@
         "lf",
         "https://en.wikipedia.org/wiki/French_Socialist_Party_(1902)",
         100,
-        900,
+        850,
         [
             [
                 "French Workers' Party"
@@ -311,6 +311,17 @@
             ]
         ]
     ],
+    "Independent Radicals": [
+        "gf",
+        "https://en.wikipedia.org/wiki/Independent_Radicals",
+        475,
+        850,
+        [
+            [
+                "Republican Union"
+            ]
+        ]
+    ],
     "Institutional Revisionism": [
         "ni",
         "https://en.wikipedia.org/wiki/Structural_fix",
@@ -337,8 +348,8 @@
     "Internationalism": [
         "li",
         "https://en.wikipedia.org/wiki/Second_International",
-        300,
-        950
+        275,
+        925
     ],
     "Jacobinism": [
         "gi",
@@ -391,7 +402,7 @@
         "cf",
         "https://en.wikipedia.org/wiki/Progressive_Republicans_(France)#Liberal_Republican_Union",
         700,
-        825,
+        800,
         [
             [
                 "Anti-Boulangism"
@@ -404,7 +415,7 @@
     "Marxism": [
         "li",
         "https://en.wikipedia.org/wiki/Marxism",
-        200,
+        175,
         775
     ],
     "Moderate Republicans": [
@@ -440,7 +451,7 @@
         "df",
         "https://en.wikipedia.org/wiki/National_Centre_of_Independents_and_Peasants",
         800,
-        1125,
+        1525,
         [
             [
                 "Democratic Alliance"
@@ -477,8 +488,8 @@
     "Progressive Republicans": [
         "cf",
         "https://en.wikipedia.org/wiki/Progressive_Republicans_(France)",
-        575,
-        750,
+        550,
+        775,
         [
             [
                 "Moderate Republicans"
@@ -513,8 +524,8 @@
     "Radical-Socialist Party": [
         "gc",
         "https://en.wikipedia.org/wiki/Radical_Party_(France)",
-        400,
-        825,
+        375,
+        850,
         [
             [
                 "Republican Union"
@@ -555,7 +566,7 @@
         "df",
         "https://en.wikipedia.org/wiki/Republican_Federation",
         775,
-        900,
+        850,
         [
             [
                 "Liberal Action"
@@ -569,7 +580,7 @@
         "df",
         "https://en.wikipedia.org/wiki/Republican_Party_of_Liberty",
         900,
-        1050,
+        1450,
         [
             [
                 "Republican Federation"
@@ -596,8 +607,8 @@
     "Revolutionary Socialist Workers' Party": [
         "lf",
         "https://en.wikipedia.org/wiki/Revolutionary_Socialist_Workers'_Party_(France)",
-        225,
-        900,
+        250,
+        850,
         [
             [
                 "Syndicalism"
@@ -620,13 +631,13 @@
         "li",
         "https://en.wikipedia.org/wiki/Social_democracy",
         100,
-        1000
+        925
     ],
     "Syndicalism": [
         "li",
         "https://en.wikipedia.org/wiki/Syndicalism",
-        150,
-        825
+        175,
+        900
     ],
     "Ultra-Royalists": [
         "rf",
