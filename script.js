@@ -290,7 +290,7 @@ function renderArrows(data) {
             const approach = points[points.length - 1]
             let end
             if (shapeType === "p") {
-                end = intersectRect(approach.x, approach.y, x2, y2, 32, 40)
+                end = intersectRect(approach.x, approach.y, x2, y2, 38, 38)
                 end = pushPointForward(approach.x, approach.y, end.x, end.y, 4)
             } else if (shapeType === "i") {
                 end = intersectCircle(approach.x, approach.y, x2, y2, 9)
