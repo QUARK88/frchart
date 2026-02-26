@@ -230,6 +230,12 @@
         900,
         475
     ],
+    "Conservative Revolution": [
+        "ri",
+        "https://en.wikipedia.org/wiki/Conservative_Revolution",
+        950,
+        1250
+    ],
     "Constitutional Monarchism": [
         "ci",
         "https://en.wikipedia.org/wiki/Constitutional_monarchy",
@@ -273,13 +279,13 @@
     "Democratic Socialism": [
         "li",
         "https://en.wikipedia.org/wiki/Democratic_socialism",
-        125,
+        175,
         1950
     ],
     "Eco-Socialism": [
         "li",
         "https://en.wikipedia.org/wiki/Eco-socialism",
-        125,
+        175,
         2050
     ],
     "Federation of the Socialist Workers": [
@@ -299,7 +305,7 @@
     "France Unbowed": [
         "lc",
         "https://en.wikipedia.org/wiki/La_France_Insoumise",
-        200,
+        250,
         2100,
         [
             [
@@ -315,6 +321,12 @@
                 "Left-Wing Populism"
             ]
         ]
+    ],
+    "Francist Movement": [
+        "rf",
+        "https://en.wikipedia.org/wiki/Mouvement_Franciste",
+        1150,
+        1175
     ],
     "French Nationalism": [
         "ni",
@@ -358,6 +370,45 @@
             ],
             [
                 "Pure Orléanists"
+            ]
+        ]
+    ],
+    "GRECE": [
+        "rc",
+        "https://en.wikipedia.org/wiki/GRECE",
+        1100,
+        1500,
+        [
+            [
+                "Tixier-Vignancour Committees"
+            ]
+        ]
+    ],
+    "Identitarian Bloc": [
+        "rc",
+        "https://en.wikipedia.org/wiki/Les_Identitaires",
+        925,
+        2000,
+        [
+            [
+                "Identitarianism"
+            ],
+            [
+                "National Front"
+            ],
+            [
+                "National Republican Movement"
+            ]
+        ]
+    ],
+    "Identitarianism": [
+        "di",
+        "https://en.wikipedia.org/wiki/Identitarian_movement#France",
+        825,
+        1700,
+        [
+            [
+                "New Right"
             ]
         ]
     ],
@@ -410,7 +461,7 @@
     "Left Party": [
         "lc",
         "https://en.wikipedia.org/wiki/Left_Party_(France)",
-        200,
+        250,
         2000,
         [
             [
@@ -427,7 +478,7 @@
     "Left-Wing Populism": [
         "li",
         "https://en.wikipedia.org/wiki/Left-wing_populism#France",
-        275,
+        325,
         2050
     ],
     "Legitimists": [
@@ -527,9 +578,9 @@
         ]
     ],
     "National Centre of Independents and Peasants": [
-        "df",
+        "cf",
         "https://en.wikipedia.org/wiki/National_Centre_of_Independents_and_Peasants",
-        775,
+        675,
         1350,
         [
             [
@@ -543,28 +594,22 @@
     "National Front": [
         "rf",
         "https://en.wikipedia.org/wiki/National_Rally#Foundation_(1972–1973)",
-        1075,
-        1600,
+        1025,
+        1625,
         [
             [
                 "New Order"
             ],
             [
-                "Right-Wing Populism"
-            ]
-        ]
-    ],
-    "National Rally": [
-        "dc",
-        "https://en.wikipedia.org/wiki/National_Rally",
-        950,
-        2100,
-        [
-            [
-                "National Front"
+                "New Right",
+                "Limited, 1980s"
             ],
             [
-                "Right-Wing Populism"
+                "Poujadism"
+            ],
+            [
+                "Tixier-Vignancour Committees",
+                "Significant Elements"
             ]
         ]
     ],
@@ -582,6 +627,37 @@
             ]
         ]
     ],
+    "National Rally": [
+        "dc",
+        "https://en.wikipedia.org/wiki/National_Rally",
+        825,
+        2100,
+        [
+            [
+                "Identitarianism"
+            ],
+            [
+                "National Front"
+            ],
+            [
+                "Right-Wing Populism"
+            ]
+        ]
+    ],
+    "National Republican Movement": [
+        "rc",
+        "https://en.wikipedia.org/wiki/National_Republican_Movement",
+        1000,
+        1925,
+        [
+            [
+                "National Front"
+            ],
+            [
+                "Right-Wing Populism"
+            ]
+        ]
+    ],
     "Neosocialism": [
         "li",
         "https://en.wikipedia.org/wiki/Neosocialism",
@@ -592,18 +668,38 @@
         "rf",
         "https://en.wikipedia.org/wiki/Ordre_Nouveau_(1960s)",
         1150,
-        1525,
+        1550,
         [
             [
-                "New Right"
+                "Occident"
             ]
         ]
     ],
     "New Right": [
         "ri",
         "https://en.wikipedia.org/wiki/Nouvelle_Droite",
-        1075,
-        1450
+        925,
+        1500,
+        [
+            [
+                "Conservative Revolution"
+            ],
+            [
+                "GRECE"
+            ]
+        ]
+    ],
+    "Occident": [
+        "rf",
+        "https://en.wikipedia.org/wiki/Occident_(movement)",
+        1150,
+        1450,
+        [
+            [
+                "Young Nation",
+                "Majority of Membership"
+            ]
+        ]
     ],
     "Plebiscitary Populism": [
         "ni",
@@ -636,6 +732,12 @@
         "https://en.wikipedia.org/wiki/Possibilism_(politics)",
         100,
         575
+    ],
+    "Poujadism": [
+        "ri",
+        "https://en.wikipedia.org/wiki/Poujadism",
+        925,
+        1600
     ],
     "Pro-Dreyfus Sentiment": [
         "ni",
@@ -715,9 +817,9 @@
         ]
     ],
     "Rally for the Republic": [
-        "df",
+        "cf",
         "https://en.wikipedia.org/wiki/Rally_for_the_Republic",
-        825,
+        725,
         1650,
         [
             [
@@ -734,11 +836,15 @@
     "Reconquest": [
         "rc",
         "https://en.wikipedia.org/wiki/Reconquête",
-        1075,
+        1100,
         2150,
         [
             [
                 "Colbertism"
+            ],
+            [
+                "National Front",
+                "Jean-Marie Le Pen's Support"
             ],
             [
                 "Right-Wing Populism"
@@ -748,7 +854,7 @@
     "Renaissance": [
         "cc",
         "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
-        700,
+        600,
         2100,
         [
             [
@@ -776,7 +882,7 @@
     "Republican Party of Liberty": [
         "df",
         "https://en.wikipedia.org/wiki/Republican_Party_of_Liberty",
-        875,
+        775,
         1300,
         [
             [
@@ -815,8 +921,8 @@
     "Right-Wing Populism": [
         "ri",
         "https://en.wikipedia.org/wiki/Right-wing_populism#France",
-        1075,
-        1975
+        1025,
+        2050
     ],
     "Saint-Simonianism": [
         "li",
@@ -887,16 +993,34 @@
         250,
         925
     ],
+    "The Clock's Crossroad": [
+        "rc",
+        "https://en.wikipedia.org/wiki/Carrefour_de_l'Horloge",
+        1150,
+        1675,
+        [
+            [
+                "GRECE",
+                "Splinter"
+            ]
+        ]
+    ],
     "The Republicans": [
-        "dc",
+        "cc",
         "https://en.wikipedia.org/wiki/The_Republicans_(France)",
-        825,
+        725,
         2075,
         [
             [
                 "Union for a Popular Movement"
             ]
         ]
+    ],
+    "Tixier-Vignancour Committees": [
+        "rf",
+        "https://en.wikipedia.org/wiki/Tixier-Vignancour_Committees",
+        1025,
+        1425
     ],
     "Ultra-Royalists": [
         "rf",
@@ -913,9 +1037,9 @@
         ]
     ],
     "Union for a Popular Movement": [
-        "df",
+        "cf",
         "https://en.wikipedia.org/wiki/Union_for_a_Popular_Movement",
-        825,
+        725,
         1900,
         [
             [
@@ -924,9 +1048,9 @@
         ]
     ],
     "Union of Democrats for the Republic": [
-        "df",
+        "cf",
         "https://en.wikipedia.org/wiki/Union_of_Democrats_for_the_Republic",
-        825,
+        725,
         1500,
         [
             [
@@ -956,6 +1080,18 @@
             ],
             [
                 "Marxism"
+            ]
+        ]
+    ],
+    "Young Nation": [
+        "rf",
+        "https://en.wikipedia.org/wiki/Jeune_Nation",
+        1150,
+        1350,
+        [
+            [
+                "Francist Movement",
+                "Pre-War Members"
             ]
         ]
     ],
