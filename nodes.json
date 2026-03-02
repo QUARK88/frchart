@@ -233,7 +233,7 @@
     "Conservative Revolution": [
         "ri",
         "https://en.wikipedia.org/wiki/Conservative_Revolution",
-        950,
+        1025,
         1250
     ],
     "Constitutional Monarchism": [
@@ -243,13 +243,13 @@
         375
     ],
     "Corporatism": [
-        "ri",
+        "ni",
         "https://en.wikipedia.org/wiki/Corporatism",
         1000,
         1125
     ],
     "Cross of Fire": [
-        "rf",
+        "df",
         "https://en.wikipedia.org/wiki/Croix-de-Feu",
         925,
         1075,
@@ -287,6 +287,18 @@
         "https://en.wikipedia.org/wiki/Eco-socialism",
         175,
         2050
+    ],
+    "European Unionism": [
+        "ci",
+        "https://en.wikipedia.org/wiki/Pro-Europeanism",
+        625,
+        2025
+    ],
+    "Euroscepticism": [
+        "ni",
+        "https://en.wikipedia.org/wiki/Euroscepticism#France",
+        650,
+        1950
     ],
     "Federation of the Socialist Workers": [
         "lf",
@@ -326,7 +338,12 @@
         "rf",
         "https://en.wikipedia.org/wiki/Mouvement_Franciste",
         1150,
-        1175
+        1100,
+        [
+            [
+                "Corporatism"
+            ]
+        ]
     ],
     "French Nationalism": [
         "ni",
@@ -377,7 +394,7 @@
         "rc",
         "https://en.wikipedia.org/wiki/GRECE",
         1100,
-        1500,
+        1550,
         [
             [
                 "Tixier-Vignancour Committees"
@@ -388,7 +405,7 @@
         "rc",
         "https://en.wikipedia.org/wiki/Les_Identitaires",
         925,
-        2000,
+        2025,
         [
             [
                 "Identitarianism"
@@ -468,6 +485,9 @@
                 "Democratic Socialism"
             ],
             [
+                "Euroscepticism"
+            ],
+            [
                 "Left-Wing Populism"
             ],
             [
@@ -544,7 +564,7 @@
     ],
     "Marxism-Leninism": [
         "li",
-        "https://en.wikipedia.org/wiki/Marxism%E2%80%93Leninism",
+        "https://en.wikipedia.org/wiki/Marxism–Leninism",
         100,
         1100
     ],
@@ -595,7 +615,7 @@
         "rf",
         "https://en.wikipedia.org/wiki/National_Rally#Foundation_(1972–1973)",
         1025,
-        1625,
+        1675,
         [
             [
                 "New Order"
@@ -634,6 +654,9 @@
         2100,
         [
             [
+                "Euroscepticism"
+            ],
+            [
                 "Identitarianism"
             ],
             [
@@ -648,7 +671,7 @@
         "rc",
         "https://en.wikipedia.org/wiki/National_Republican_Movement",
         1000,
-        1925,
+        1950,
         [
             [
                 "National Front"
@@ -662,13 +685,21 @@
         "li",
         "https://en.wikipedia.org/wiki/Neosocialism",
         325,
-        1100
+        1125,
+        [
+            [
+                "Corporatism"
+            ],
+            [
+                "SFIO"
+            ]
+        ]
     ],
     "New Order": [
         "rf",
         "https://en.wikipedia.org/wiki/Ordre_Nouveau_(1960s)",
         1150,
-        1550,
+        1600,
         [
             [
                 "Occident"
@@ -679,7 +710,7 @@
         "ri",
         "https://en.wikipedia.org/wiki/Nouvelle_Droite",
         925,
-        1500,
+        1550,
         [
             [
                 "Conservative Revolution"
@@ -693,7 +724,7 @@
         "rf",
         "https://en.wikipedia.org/wiki/Occident_(movement)",
         1150,
-        1450,
+        1500,
         [
             [
                 "Young Nation",
@@ -737,7 +768,7 @@
         "ri",
         "https://en.wikipedia.org/wiki/Poujadism",
         925,
-        1600
+        1650
     ],
     "Pro-Dreyfus Sentiment": [
         "ni",
@@ -820,7 +851,7 @@
         "cf",
         "https://en.wikipedia.org/wiki/Rally_for_the_Republic",
         725,
-        1650,
+        1775,
         [
             [
                 "Union of Democrats for the Republic"
@@ -843,6 +874,9 @@
                 "Colbertism"
             ],
             [
+                "Euroscepticism"
+            ],
+            [
                 "National Front",
                 "Jean-Marie Le Pen's Support"
             ],
@@ -857,6 +891,9 @@
         600,
         2100,
         [
+            [
+                "European Unionism"
+            ],
             [
                 "Socialist Party"
             ],
@@ -966,15 +1003,18 @@
         "gc",
         "https://en.wikipedia.org/wiki/Socialist_Party_(France)",
         400,
-        1550,
+        1650,
         [
+            [
+                "European Unionism"
+            ],
             [
                 "SFIO"
             ]
         ]
     ],
     "Social Party": [
-        "rf",
+        "df",
         "https://en.wikipedia.org/wiki/French_Social_Party",
         925,
         1175,
@@ -997,7 +1037,7 @@
         "rc",
         "https://en.wikipedia.org/wiki/Carrefour_de_l'Horloge",
         1150,
-        1675,
+        1725,
         [
             [
                 "GRECE",
@@ -1020,7 +1060,7 @@
         "rf",
         "https://en.wikipedia.org/wiki/Tixier-Vignancour_Committees",
         1025,
-        1425
+        1475
     ],
     "Ultra-Royalists": [
         "rf",
@@ -1051,7 +1091,7 @@
         "cf",
         "https://en.wikipedia.org/wiki/Union_of_Democrats_for_the_Republic",
         725,
-        1500,
+        1625,
         [
             [
                 "Union for the New Republic"
@@ -1087,7 +1127,7 @@
         "rf",
         "https://en.wikipedia.org/wiki/Jeune_Nation",
         1150,
-        1350,
+        1300,
         [
             [
                 "Francist Movement",

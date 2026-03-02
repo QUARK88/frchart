@@ -183,7 +183,7 @@ body.editing .node__text {
 #zoomZone {
     position: relative;
     width: 1500px;
-    height: 2300px;
+    height: 2250px;
     z-index: 0;
     margin: 0;
     padding: 0;
