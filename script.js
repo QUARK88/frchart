@@ -42,6 +42,116 @@ fetch("./nodes.json")
         NODE_DATA = data
         render()
     })
+document.addEventListener("mousedown", e => {
+    const menu = document.getElementById("nodeEditor")
+    if (!menu) return
+    if (menu.contains(e.target)) return
+    menu.remove()
+})
+function openNodeEditor(key, x, y) {
+    const menu = document.createElement("div")
+    menu.id = "nodeEditor"
+    menu.style.left = x + "px"
+    menu.style.top = y + "px"
+    const title = document.createElement("div")
+    title.textContent = key
+    title.style.fontSize = "16px"
+    title.style.marginBottom = "4px"
+    menu.appendChild(title)
+    const typeInput = document.createElement("input")
+    typeInput.placeholder = "Type"
+    typeInput.value = NODE_DATA[key][0] || ""
+    menu.appendChild(typeInput)
+    const linkInput = document.createElement("input")
+    linkInput.placeholder = "Link"
+    linkInput.value = NODE_DATA[key][1] || ""
+    menu.appendChild(linkInput)
+    const precursorsContainer = document.createElement("div")
+    precursorsContainer.style.display = "flex"
+    precursorsContainer.style.flexDirection = "column"
+    precursorsContainer.style.gap = "4px"
+    menu.appendChild(precursorsContainer)
+    function addPrecursorInput(value = "") {
+        const input = document.createElement("input")
+        input.placeholder = "Precursor node"
+        input.value = value
+        input.oninput = () => {
+            const inputs = [...precursorsContainer.querySelectorAll("input")]
+            if (inputs[inputs.length - 1] === input && input.value.trim() !== "")
+                addPrecursorInput()
+        }
+        precursorsContainer.appendChild(input)
+    }
+    const existingPrecursors = NODE_DATA[key][4] || []
+    existingPrecursors.forEach(p => addPrecursorInput(p[0]))
+    addPrecursorInput()
+    function save() {
+        const newType = typeInput.value.trim()
+        if (newType === "") {
+            delete NODE_DATA[key]
+            menu.remove()
+            render()
+            return
+        }
+        NODE_DATA[key][0] = newType
+        NODE_DATA[key][1] = linkInput.value.trim()
+        const inputs = [...precursorsContainer.querySelectorAll("input")]
+        const newPrecursors = []
+        inputs.forEach(i => {
+            const val = i.value.trim()
+            if (val !== "") newPrecursors.push([val])
+        })
+        if (newPrecursors.length > 0)
+            NODE_DATA[key][4] = newPrecursors
+        else
+            delete NODE_DATA[key][4]
+        menu.remove()
+        render()
+    }
+    const buttons = document.createElement("div")
+    buttons.className = "buttons"
+    const cancelBtn = document.createElement("button")
+    cancelBtn.textContent = "Cancel"
+    cancelBtn.onclick = () => menu.remove()
+    const saveBtn = document.createElement("button")
+    saveBtn.textContent = "Save"
+    saveBtn.onclick = save
+    buttons.appendChild(cancelBtn)
+    buttons.appendChild(saveBtn)
+    menu.appendChild(buttons)
+    menu.addEventListener("keydown", e => {
+        if (e.key === "Enter") {
+            e.preventDefault()
+            save()
+        }
+    })
+    document.body.appendChild(menu)
+    typeInput.focus()
+}
+document.addEventListener("contextmenu", e => {
+    if (!EDIT_MODE) return
+    const existing = document.getElementById("nodeEditor")
+    if (existing) existing.remove()
+    e.preventDefault()
+    const nodeEl = e.target.closest(".node")
+    const zoom = document.getElementById("zoomZone")
+    const rect = zoom.getBoundingClientRect()
+    const rawX = e.clientX - rect.left
+    const rawY = e.clientY - rect.top
+    const snappedX = Math.round(rawX / GRID) * GRID
+    const snappedY = Math.round(rawY / GRID) * GRID
+    if (nodeEl) {
+        const key = nodeEl.dataset.key
+        openNodeEditor(key, e.pageX, e.pageY)
+        return
+    }
+    const title = prompt("Create new node with name:")
+    if (!title || NODE_DATA[title]) return
+    pushUndoState()
+    REDO_STACK.length = 0
+    NODE_DATA[title] = ["ni", "", snappedX, snappedY]
+    render()
+})
 function pushUndoState() {
     UNDO_STACK.push(JSON.parse(JSON.stringify(NODE_DATA)))
     if (UNDO_STACK.length > MAX_UNDO) UNDO_STACK.shift()
@@ -84,39 +194,51 @@ document.addEventListener("click", e => {
 })
 function enableDragging() {
     document.querySelectorAll(".node").forEach(el => {
-        let sx, sy, ox, oy, key, moved = false
+        let key
         el.onmousedown = e => {
-            pushUndoState()
-            REDO_STACK.length = 0
-            if (!EDIT_MODE) return
+            if (!EDIT_MODE || e.button !== 0) return
             e.preventDefault()
             key = el.dataset.key
-            sx = e.clientX
-            sy = e.clientY
-            ox = NODE_DATA[key][X]
-            oy = NODE_DATA[key][Y]
-            moved = false
+            pushUndoState()
+            REDO_STACK.length = 0
             document.onmousemove = ev => {
-                const dx = Math.round((ev.clientX - sx) / GRID) * GRID
-                const dy = Math.round((ev.clientY - sy) / GRID) * GRID
-                if (dx || dy) {
-                    NODE_DATA[key][X] = ox + dx
-                    NODE_DATA[key][Y] = oy + dy
-                    el.style.left = NODE_DATA[key][X] + "px"
-                    el.style.top = NODE_DATA[key][Y] + "px"
-                    moved = true
-                }
+                const zoom = document.getElementById("zoomZone")
+                const rect = zoom.getBoundingClientRect()
+                const rawX = ev.clientX - rect.left
+                const rawY = ev.clientY - rect.top
+                const snappedX = Math.round(rawX / GRID) * GRID
+                const snappedY = Math.round(rawY / GRID) * GRID
+                NODE_DATA[key][2] = snappedX
+                NODE_DATA[key][3] = snappedY
+                el.style.left = snappedX + "px"
+                el.style.top = snappedY + "px"
+                arrows.innerHTML = ""
+                renderArrows(NODE_DATA)
             }
             document.onmouseup = () => {
                 document.onmousemove = null
                 document.onmouseup = null
-                if (moved) render()
+                render()
             }
         }
     })
 }
 function copyUpdatedJSON() {
-    navigator.clipboard.writeText(JSON.stringify(NODE_DATA, null, 4))
+    const sorted = Object.fromEntries(
+        Object.keys(NODE_DATA)
+            .sort((a, b) => a.localeCompare(b))
+            .map(key => {
+                const node = NODE_DATA[key]
+                const relations = Array.isArray(node[4])
+                    ? [...node[4]].sort((a, b) => a[0].localeCompare(b[0]))
+                    : null
+                const base = [node[0], node[1], node[2], node[3]]
+                return relations && relations.length
+                    ? [key, [...base, relations]]
+                    : [key, base]
+            })
+    )
+    navigator.clipboard.writeText(JSON.stringify(sorted, null, 4))
 }
 function renderNodes(data) {
     Object.entries(data).forEach(([name, node]) => {

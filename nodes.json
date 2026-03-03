@@ -105,10 +105,10 @@
         450,
         [
             [
-                "Classical Liberalism"
+                "Caesarism"
             ],
             [
-                "Caesarism"
+                "Classical Liberalism"
             ],
             [
                 "Constitutional Monarchism"
@@ -300,6 +300,17 @@
         650,
         1950
     ],
+    "Fascism": [
+        "ri",
+        "https://en.wikipedia.org/wiki/Fascism",
+        1150,
+        1000,
+        [
+            [
+                "French Nationalism"
+            ]
+        ]
+    ],
     "Federation of the Socialist Workers": [
         "lf",
         "https://en.wikipedia.org/wiki/Federation_of_the_Socialist_Workers_of_France",
@@ -342,6 +353,10 @@
         [
             [
                 "Corporatism"
+            ],
+            [
+                "Fascism",
+                "Aesthetics"
             ]
         ]
     ],
@@ -358,13 +373,13 @@
         850,
         [
             [
-                "Workers' Party"
-            ],
-            [
                 "Central Revolutionary Committee"
             ],
             [
                 "Social Democracy"
+            ],
+            [
+                "Workers' Party"
             ]
         ]
     ],
@@ -812,17 +827,6 @@
             ]
         ]
     ],
-    "Radical-Socialist Party": [
-        "gc",
-        "https://en.wikipedia.org/wiki/Radical_Party_(France)",
-        375,
-        875,
-        [
-            [
-                "Republican Union"
-            ]
-        ]
-    ],
     "Radical Republicans": [
         "lf",
         "https://en.wikipedia.org/wiki/Classical_radicalism#France",
@@ -844,6 +848,17 @@
             ],
             [
                 "Utopian Socialism"
+            ]
+        ]
+    ],
+    "Radical-Socialist Party": [
+        "gc",
+        "https://en.wikipedia.org/wiki/Radical_Party_(France)",
+        375,
+        875,
+        [
+            [
+                "Republican Union"
             ]
         ]
     ],
@@ -999,20 +1014,6 @@
         100,
         925
     ],
-    "Socialist Party": [
-        "gc",
-        "https://en.wikipedia.org/wiki/Socialist_Party_(France)",
-        400,
-        1650,
-        [
-            [
-                "European Unionism"
-            ],
-            [
-                "SFIO"
-            ]
-        ]
-    ],
     "Social Party": [
         "df",
         "https://en.wikipedia.org/wiki/French_Social_Party",
@@ -1024,6 +1025,20 @@
             ],
             [
                 "Cross of Fire"
+            ]
+        ]
+    ],
+    "Socialist Party": [
+        "gc",
+        "https://en.wikipedia.org/wiki/Socialist_Party_(France)",
+        400,
+        1650,
+        [
+            [
+                "European Unionism"
+            ],
+            [
+                "SFIO"
             ]
         ]
     ],
