@@ -464,8 +464,6 @@ body.editing .node__text {
     gap: 4px;
 }
 
-#nodeEditor input {}
-
 #nodeEditor .buttons button {
     border: none;
     cursor: pointer;
