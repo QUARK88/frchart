@@ -613,9 +613,9 @@
         ]
     ],
     "National Centre of Independents and Peasants": [
-        "cf",
+        "cc",
         "https://en.wikipedia.org/wiki/National_Centre_of_Independents_and_Peasants",
-        675,
+        725,
         1350,
         [
             [
@@ -772,6 +772,12 @@
                 "Young Patriots"
             ]
         ]
+    ],
+    "Popular Republican Movement": [
+        "cf",
+        "https://en.wikipedia.org/wiki/Popular_Republican_Movement",
+        575,
+        1325
     ],
     "Possibilism": [
         "li",
@@ -934,7 +940,7 @@
     "Republican Party of Liberty": [
         "df",
         "https://en.wikipedia.org/wiki/Republican_Party_of_Liberty",
-        775,
+        850,
         1300,
         [
             [
@@ -943,7 +949,7 @@
         ]
     ],
     "Republican Union": [
-        "lf",
+        "gf",
         "https://en.wikipedia.org/wiki/Republican_Union_(France)",
         350,
         725,
