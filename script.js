@@ -168,21 +168,27 @@ function toggleEditMode() {
     document.body.classList.toggle("editing", EDIT_MODE)
     render()
 }
+function undo() {
+    if (!UNDO_STACK.length) return
+    REDO_STACK.push(JSON.parse(JSON.stringify(NODE_DATA)))
+    NODE_DATA = UNDO_STACK.pop()
+    render()
+}
+function redo() {
+    if (!REDO_STACK.length) return
+    UNDO_STACK.push(JSON.parse(JSON.stringify(NODE_DATA)))
+    NODE_DATA = REDO_STACK.pop()
+    render()
+}
 document.addEventListener("keydown", e => {
     if (!EDIT_MODE) return
     if ((e.ctrlKey || e.metaKey) && e.key === "z") {
-        e.preventDefault()
-        if (!UNDO_STACK.length) return
-        REDO_STACK.push(JSON.parse(JSON.stringify(NODE_DATA)))
-        NODE_DATA = UNDO_STACK.pop()
-        render()
+    e.preventDefault()
+        undo()
     }
     if ((e.ctrlKey || e.metaKey) && e.key === "y") {
-        e.preventDefault()
-        if (!REDO_STACK.length) return
-        UNDO_STACK.push(JSON.parse(JSON.stringify(NODE_DATA)))
-        NODE_DATA = REDO_STACK.pop()
-        render()
+    e.preventDefault()
+        redo()
     }
 })
 document.addEventListener("click", e => {

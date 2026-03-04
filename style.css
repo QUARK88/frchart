@@ -89,18 +89,18 @@ body.editing .node__text {
 #controls {
     position: fixed;
     display: grid;
-    grid-template-columns: 64px 128px;
+    grid-template-columns: 64px 64px 64px 64px;
+    grid-template-rows: 48px 48px;
     align-items: center;
     gap: 16px;
     top: 16px;
     left: 16px;
-    height: 48px;
     z-index: 1000;
 }
 
-#controls button {
-    height: 48px;
-    width: 64px;
+#controls button,.theme-toggle {
+    height: 100%;
+    width: 100%;
     font-size: 24px;
     cursor: pointer;
     border-radius: 12px;
@@ -112,12 +112,6 @@ body.editing .node__text {
     transition: background-color 0.2s ease, transform 0.15s ease;
     color: var(--bg);
     text-shadow: none;
-}
-
-.theme-toggle {
-    height: 48px;
-    width: 64px;
-    cursor: pointer;
 }
 
 .theme-toggle input {
@@ -166,7 +160,7 @@ body.editing .node__text {
     height: 16px;
     border-radius: 16px;
     border: none;
-    width: 128px;
+    width: 100%;
     margin: 0;
     cursor: pointer;
 }
