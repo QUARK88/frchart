@@ -54,6 +54,7 @@ function openNodeEditor(key, x, y) {
     menu.style.left = x + "px"
     menu.style.top = y + "px"
     const title = document.createElement("div")
+    title.style.userSelect = "text"
     title.textContent = key
     title.style.fontSize = "16px"
     title.style.marginBottom = "4px"
@@ -183,11 +184,11 @@ function redo() {
 document.addEventListener("keydown", e => {
     if (!EDIT_MODE) return
     if ((e.ctrlKey || e.metaKey) && e.key === "z") {
-    e.preventDefault()
+        e.preventDefault()
         undo()
     }
     if ((e.ctrlKey || e.metaKey) && e.key === "y") {
-    e.preventDefault()
+        e.preventDefault()
         redo()
     }
 })

@@ -98,7 +98,8 @@ body.editing .node__text {
     z-index: 1000;
 }
 
-#controls button,.theme-toggle {
+#controls button,
+.theme-toggle {
     height: 100%;
     width: 100%;
     font-size: 24px;
@@ -270,7 +271,7 @@ body.editing .node__text {
     left: 1250px;
     gap: 32px;
     font-size: 24px;
-    z-index: 2;
+    z-index: 3;
     width: 192px;
 }
 
