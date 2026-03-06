@@ -279,25 +279,25 @@
     "Democratic Socialism": [
         "li",
         "https://en.wikipedia.org/wiki/Democratic_socialism",
-        175,
+        150,
         1950
     ],
     "Eco-Socialism": [
         "li",
         "https://en.wikipedia.org/wiki/Eco-socialism",
-        175,
+        150,
         2050
     ],
     "European Unionism": [
         "ci",
         "https://en.wikipedia.org/wiki/Pro-Europeanism",
-        625,
+        600,
         2025
     ],
     "Euroscepticism": [
         "ni",
         "https://en.wikipedia.org/wiki/Euroscepticism#France",
-        650,
+        625,
         1950
     ],
     "Fascism": [
@@ -328,7 +328,7 @@
     "France Unbowed": [
         "lc",
         "https://en.wikipedia.org/wiki/La_France_Insoumise",
-        250,
+        225,
         2100,
         [
             [
@@ -436,7 +436,7 @@
     "Identitarianism": [
         "di",
         "https://en.wikipedia.org/wiki/Identitarian_movement#France",
-        825,
+        800,
         1700,
         [
             [
@@ -493,7 +493,7 @@
     "Left Party": [
         "lc",
         "https://en.wikipedia.org/wiki/Left_Party_(France)",
-        250,
+        225,
         2000,
         [
             [
@@ -513,7 +513,7 @@
     "Left-Wing Populism": [
         "li",
         "https://en.wikipedia.org/wiki/Left-wing_populism#France",
-        325,
+        300,
         2050
     ],
     "Legitimists": [
@@ -616,7 +616,7 @@
         "cc",
         "https://en.wikipedia.org/wiki/National_Centre_of_Independents_and_Peasants",
         725,
-        1350,
+        1325,
         [
             [
                 "Democratic Alliance"
@@ -665,7 +665,7 @@
     "National Rally": [
         "dc",
         "https://en.wikipedia.org/wiki/National_Rally",
-        825,
+        800,
         2100,
         [
             [
@@ -871,7 +871,7 @@
     "Rally for the Republic": [
         "cf",
         "https://en.wikipedia.org/wiki/Rally_for_the_Republic",
-        725,
+        700,
         1775,
         [
             [
@@ -909,7 +909,7 @@
     "Renaissance": [
         "cc",
         "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
-        600,
+        575,
         2100,
         [
             [
@@ -941,7 +941,7 @@
         "df",
         "https://en.wikipedia.org/wiki/Republican_Party_of_Liberty",
         850,
-        1300,
+        1275,
         [
             [
                 "Republican Federation"
@@ -1069,7 +1069,7 @@
     "The Republicans": [
         "cc",
         "https://en.wikipedia.org/wiki/The_Republicans_(France)",
-        725,
+        700,
         2075,
         [
             [
@@ -1100,7 +1100,7 @@
     "Union for a Popular Movement": [
         "cf",
         "https://en.wikipedia.org/wiki/Union_for_a_Popular_Movement",
-        725,
+        700,
         1900,
         [
             [
@@ -1111,7 +1111,7 @@
     "Union of Democrats for the Republic": [
         "cf",
         "https://en.wikipedia.org/wiki/Union_of_Democrats_for_the_Republic",
-        725,
+        700,
         1625,
         [
             [
