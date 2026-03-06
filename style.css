@@ -201,7 +201,7 @@ body.editing .node__text {
     top: 160px;
     left: 96px;
     font-size: 16px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .relatedSite {
