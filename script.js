@@ -84,7 +84,12 @@ function openNodeEditor(key, x, y) {
         precursorsContainer.appendChild(input)
     }
     const existingPrecursors = NODE_DATA[key][4] || []
-    existingPrecursors.forEach(p => addPrecursorInput(p[0]))
+    existingPrecursors.forEach(p => {
+        if (p.length > 1)
+            addPrecursorInput(p[0] + "(" + p[1] + ")")
+        else
+            addPrecursorInput(p[0])
+    })
     addPrecursorInput()
     function save() {
         const newType = typeInput.value.trim()
@@ -100,7 +105,12 @@ function openNodeEditor(key, x, y) {
         const newPrecursors = []
         inputs.forEach(i => {
             const val = i.value.trim()
-            if (val !== "") newPrecursors.push([val])
+            if (val === "") return
+            const match = val.match(/^(.+?)\((.+)\)$/)
+            if (match)
+                newPrecursors.push([match[1].trim(), match[2].trim()])
+            else
+                newPrecursors.push([val])
         })
         if (newPrecursors.length > 0)
             NODE_DATA[key][4] = newPrecursors
@@ -285,7 +295,7 @@ function renderNodes(data) {
             shape.href = node[URL]
             shape.target = "_blank"
         } if (name.length > 18) {
-            text.style.width = name.length > 36 ? "112px" : "100px"
+            text.style.width = name.length > 36 ? "108px" : "92px"
         }
         container.appendChild(text)
         container.appendChild(shape)
@@ -362,17 +372,6 @@ function intersectCircle(x1, y1, x2, y2, radius) {
         y: y2 - (dy / len) * radius
     }
 }
-function intersectRect(x1, y1, x2, y2, halfW, halfH) {
-    const dx = x2 - x1
-    const dy = y2 - y1
-    const tx = dx !== 0 ? halfW / Math.abs(dx) : Infinity
-    const ty = dy !== 0 ? halfH / Math.abs(dy) : Infinity
-    const t = Math.min(tx, ty)
-    return {
-        x: x2 - dx * t,
-        y: y2 - dy * t
-    }
-}
 function intersectDiamond(x1, y1, x2, y2, half) {
     const dx = x2 - x1
     const dy = y2 - y1
@@ -418,10 +417,7 @@ function renderArrows(data) {
             }
             const approach = points[points.length - 1]
             let end
-            if (shapeType === "p") {
-                end = intersectRect(approach.x, approach.y, x2, y2, 38, 38)
-                end = pushPointForward(approach.x, approach.y, end.x, end.y, 4)
-            } else if (shapeType === "i") {
+            if (shapeType === "i") {
                 end = intersectCircle(approach.x, approach.y, x2, y2, 9)
                 end = pushPointForward(x2, y2, end.x, end.y, 12)
             } else if (shapeType === "f") {
@@ -442,10 +438,11 @@ function renderArrows(data) {
                 const midX = (x1 + x2) / 2
                 const midY = (y1 + y2) / 2
                 const fo = document.createElementNS("http://www.w3.org/2000/svg", "foreignObject")
-                fo.setAttribute("x", midX - 36)
-                fo.setAttribute("y", midY - 64)
-                fo.setAttribute("width", 72)
-                fo.setAttribute("height", 128)
+                fo.setAttribute("x", midX - 20)
+                fo.setAttribute("y", midY - 32)
+                fo.setAttribute("width", 40)
+                fo.setAttribute("height", 64)
+                fo.style.overflow = "visible"
                 const div = document.createElement("div")
                 div.className = "arrow__text"
                 div.textContent = label
