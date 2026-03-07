@@ -34,6 +34,12 @@
         600,
         1350
     ],
+    "Alter-Globalism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Alter-globalization",
+        225,
+        1875
+    ],
     "Anti-Boulangism": [
         "ci",
         "https://en.wikipedia.org/wiki/Georges_Ernest_Boulanger#Downfall",
@@ -246,6 +252,9 @@
                 "Until 1979"
             ],
             [
+                "Planism"
+            ],
+            [
                 "SFIO"
             ]
         ]
@@ -311,13 +320,13 @@
     "Democratic Socialism": [
         "li",
         "https://en.wikipedia.org/wiki/Democratic_socialism",
-        225,
+        250,
         1950
     ],
     "Eco-Socialism": [
         "li",
         "https://en.wikipedia.org/wiki/Eco-socialism",
-        225,
+        250,
         2050
     ],
     "European Unionism": [
@@ -400,7 +409,7 @@
     "France Unbowed": [
         "lc",
         "https://en.wikipedia.org/wiki/La_France_Insoumise",
-        300,
+        325,
         2100,
         [
             [
@@ -592,7 +601,7 @@
     "Left Party": [
         "lc",
         "https://en.wikipedia.org/wiki/Left_Party_(France)",
-        300,
+        325,
         2000,
         [
             [
@@ -616,12 +625,12 @@
         "li",
         "https://en.wikipedia.org/wiki/Left_communism",
         175,
-        1425
+        1400
     ],
     "Left-Wing Populism": [
         "gi",
         "https://en.wikipedia.org/wiki/Left-wing_populism#France",
-        375,
+        400,
         2050
     ],
     "Legitimists": [
@@ -689,7 +698,12 @@
         "li",
         "https://en.wikipedia.org/wiki/Marxism–Leninism",
         175,
-        1125
+        1125,
+        [
+            [
+                "Planism"
+            ]
+        ]
     ],
     "Moderate Republicans": [
         "gf",
@@ -835,6 +849,9 @@
                 "Corporatism"
             ],
             [
+                "Planism"
+            ],
+            [
                 "Republican-Socialist Party",
                 "Neo-Jacobins"
             ],
@@ -846,8 +863,8 @@
     "New Left": [
         "li",
         "https://en.wikipedia.org/wiki/New_Left#Development_in_Europe",
-        200,
-        1650,
+        325,
+        1625,
         [
             [
                 "Situationist International"
@@ -908,6 +925,12 @@
                 "Dirigisme"
             ]
         ]
+    ],
+    "Planism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Planned_economy",
+        275,
+        1000
     ],
     "Plebiscitary Populism": [
         "ni",
@@ -1033,7 +1056,7 @@
     "Rally for the Republic": [
         "cf",
         "https://en.wikipedia.org/wiki/Rally_for_the_Republic",
-        750,
+        725,
         1725,
         [
             [
@@ -1067,7 +1090,7 @@
     "Rally of the French People": [
         "df",
         "https://en.wikipedia.org/wiki/Rally_of_the_French_People",
-        850,
+        825,
         1375,
         [
             [
@@ -1102,6 +1125,23 @@
             ],
             [
                 "Right-Wing Populism"
+            ]
+        ]
+    ],
+    "Red and Green Alternative": [
+        "lf",
+        "https://en.wikipedia.org/wiki/Alternative_Rouge_et_Verte",
+        100,
+        1775,
+        [
+            [
+                "Eco-Socialism"
+            ],
+            [
+                "Unified Socialist Party"
+            ],
+            [
+                "Workers' Self-Management"
             ]
         ]
     ],
@@ -1250,7 +1290,7 @@
     "Social Catholicism": [
         "di",
         "https://en.wikipedia.org/wiki/Catholic_social_teaching",
-        825,
+        850,
         950,
         [
             [
@@ -1273,7 +1313,7 @@
     "Social Party": [
         "df",
         "https://en.wikipedia.org/wiki/French_Social_Party",
-        925,
+        875,
         1175,
         [
             [
@@ -1284,6 +1324,17 @@
             ],
             [
                 "Social Catholicism"
+            ]
+        ]
+    ],
+    "Socialist Feminism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Socialist_feminism",
+        175,
+        1800,
+        [
+            [
+                "New Left"
             ]
         ]
     ],
@@ -1313,6 +1364,43 @@
         250,
         925
     ],
+    "The Aftermath": [
+        "lc",
+        "https://en.wikipedia.org/wiki/L'Après",
+        150,
+        2175,
+        [
+            [
+                "Eco-Socialism"
+            ],
+            [
+                "France Unbowed"
+            ],
+            [
+                "Together"
+            ]
+        ]
+    ],
+    "The Alternatives": [
+        "lf",
+        "https://en.wikipedia.org/wiki/Les_Alternatifs",
+        100,
+        1925,
+        [
+            [
+                "Alter-Globalism"
+            ],
+            [
+                "Eco-Socialism"
+            ],
+            [
+                "Red and Green Alternative"
+            ],
+            [
+                "Socialist Feminism"
+            ]
+        ]
+    ],
     "The Clock's Club": [
         "rc",
         "https://en.wikipedia.org/wiki/Carrefour_de_l'Horloge",
@@ -1321,7 +1409,7 @@
         [
             [
                 "GRECE",
-                "Splinter"
+                "Liberal-Catholic Splinter"
             ],
             [
                 "Popular Democracy"
@@ -1356,6 +1444,26 @@
         "https://en.wikipedia.org/wiki/Tixier-Vignancour_Committees",
         1000,
         1475
+    ],
+    "Together": [
+        "lf",
+        "https://en.wikipedia.org/wiki/Ensemble!",
+        100,
+        2025,
+        [
+            [
+                "The Alternatives"
+            ],
+            [
+                "Trotskyism"
+            ]
+        ]
+    ],
+    "Trotskyism": [
+        "li",
+        "https://en.wikipedia.org/wiki/Trotskyism",
+        175,
+        2075
     ],
     "Ultra-Royalists": [
         "rf",
@@ -1400,7 +1508,7 @@
     "Union for the New Republic": [
         "df",
         "https://en.wikipedia.org/wiki/Union_for_the_New_Republic",
-        800,
+        775,
         1450,
         [
             [
@@ -1414,7 +1522,7 @@
     "Union of Democrats for the Republic": [
         "cf",
         "https://en.wikipedia.org/wiki/Union_of_Democrats_for_the_Republic",
-        750,
+        725,
         1550,
         [
             [
@@ -1454,7 +1562,7 @@
         "li",
         "https://en.wikipedia.org/wiki/Workers'_self-management",
         200,
-        1550
+        1450
     ],
     "Young Nation": [
         "rf",
