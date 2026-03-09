@@ -452,6 +452,14 @@ function renderArrows(data) {
         })
     })
 }
+function generateTimeline() {
+    timeline = document.getElementById("timeline")
+    for (i = 1850; i <= 2025; i += 5) {
+        timelineSection = document.createElement("div")
+        timelineSection.textContent = i
+        timeline.appendChild(timelineSection)
+    }
+}
 const slider = document.getElementById("zoomSlider")
 const zoomZone = document.getElementById("zoomZone")
 const html = document.getElementById("html")
@@ -474,3 +482,4 @@ slider.addEventListener("input", () => {
 applyZoom(100)
 html.style.minWidth = "100%"
 html.style.maxWidth = "fit-content"
+generateTimeline()
