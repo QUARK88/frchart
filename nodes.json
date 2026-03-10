@@ -31,8 +31,8 @@
     "Agrarianism": [
         "ci",
         "https://en.wikipedia.org/wiki/Agrarianism",
-        625,
-        1350
+        650,
+        1200
     ],
     "Alter-Globalism": [
         "li",
@@ -570,7 +570,7 @@
         "cc",
         "https://en.wikipedia.org/wiki/National_Centre_of_Independents_and_Peasants",
         700,
-        1325,
+        1350,
         [
             [
                 "Agrarianism"
@@ -1192,7 +1192,7 @@
         "df",
         "https://en.wikipedia.org/wiki/Republican_Party_of_Liberty",
         775,
-        1275,
+        1300,
         [
             [
                 "Republican Federation"
@@ -1440,7 +1440,7 @@
         "ci",
         "https://en.wikipedia.org/wiki/Third_Way",
         500,
-        2025
+        2050
     ],
     "Tixier-Vignancour Committees": [
         "rf",
