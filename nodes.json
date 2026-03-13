@@ -31,13 +31,13 @@
     "Agrarianism": [
         "ci",
         "https://en.wikipedia.org/wiki/Agrarianism",
-        650,
-        1200
+        600,
+        1400
     ],
     "Alter-Globalism": [
         "li",
         "https://en.wikipedia.org/wiki/Alter-globalization",
-        225,
+        200,
         1875
     ],
     "Anti-Boulangism": [
@@ -90,13 +90,13 @@
     "Avant-Garde Art Movement": [
         "ni",
         "https://en.wikipedia.org/wiki/Avant-garde",
-        150,
+        125,
         1350
     ],
     "Bakuninism": [
         "li",
         "https://en.wikipedia.org/wiki/Collectivist_anarchism",
-        125,
+        100,
         500,
         [
             [
@@ -107,7 +107,7 @@
     "Blanquism": [
         "li",
         "https://en.wikipedia.org/wiki/Blanquism",
-        325,
+        300,
         450,
         [
             [
@@ -224,7 +224,7 @@
     "Communards": [
         "lf",
         "https://en.wikipedia.org/wiki/Communards",
-        200,
+        175,
         550,
         [
             [
@@ -244,7 +244,7 @@
     "Communist Party": [
         "lc",
         "https://en.wikipedia.org/wiki/French_Communist_Party",
-        100,
+        75,
         1075,
         [
             [
@@ -297,7 +297,7 @@
     "Council Communism": [
         "li",
         "https://en.wikipedia.org/wiki/Council_communism",
-        100,
+        75,
         1175
     ],
     "Democratic Alliance": [
@@ -334,19 +334,19 @@
     "Democratic and Socialist Union": [
         "cf",
         "https://en.wikipedia.org/wiki/Democratic_and_Socialist_Union_of_the_Resistance",
-        500,
-        1350
+        525,
+        1300
     ],
     "Democratic Socialism": [
         "li",
         "https://en.wikipedia.org/wiki/Democratic_socialism",
-        250,
+        225,
         1950
     ],
     "Eco-Socialism": [
         "li",
         "https://en.wikipedia.org/wiki/Eco-socialism",
-        250,
+        225,
         2050
     ],
     "European Unionism": [
@@ -375,7 +375,7 @@
     "Federation of the Socialist Workers": [
         "lf",
         "https://en.wikipedia.org/wiki/Federation_of_the_Socialist_Workers_of_France",
-        100,
+        75,
         650,
         [
             [
@@ -412,7 +412,7 @@
     "France Unbowed": [
         "lc",
         "https://en.wikipedia.org/wiki/La_France_Insoumise",
-        325,
+        300,
         2100,
         [
             [
@@ -453,7 +453,7 @@
     "French Socialist Party": [
         "lf",
         "https://en.wikipedia.org/wiki/French_Socialist_Party_(1902)",
-        100,
+        75,
         850,
         [
             [
@@ -496,7 +496,7 @@
         "di",
         "https://en.wikipedia.org/wiki/Gaullism",
         875,
-        1350,
+        1325,
         [
             [
                 "Paternalistic Conservatism"
@@ -570,7 +570,7 @@
         "cc",
         "https://en.wikipedia.org/wiki/National_Centre_of_Independents_and_Peasants",
         700,
-        1350,
+        1375,
         [
             [
                 "Agrarianism"
@@ -612,7 +612,7 @@
     "Internationalism": [
         "li",
         "https://en.wikipedia.org/wiki/Second_International",
-        175,
+        150,
         875
     ],
     "Jacobinism": [
@@ -624,7 +624,7 @@
     "Left Party": [
         "lc",
         "https://en.wikipedia.org/wiki/Left_Party_(France)",
-        325,
+        300,
         2000,
         [
             [
@@ -647,13 +647,13 @@
     "Left-Communism": [
         "li",
         "https://en.wikipedia.org/wiki/Left_communism",
-        175,
+        150,
         1400
     ],
     "Left-Wing Populism": [
         "gi",
         "https://en.wikipedia.org/wiki/Left-wing_populism#France",
-        400,
+        375,
         2050
     ],
     "Legitimists": [
@@ -714,13 +714,13 @@
     "Marxism": [
         "li",
         "https://en.wikipedia.org/wiki/Marxism",
-        175,
+        150,
         775
     ],
     "Marxism-Leninism": [
         "li",
         "https://en.wikipedia.org/wiki/Marxism–Leninism",
-        200,
+        175,
         1175,
         [
             [
@@ -749,8 +749,8 @@
     "Mutualism": [
         "li",
         "https://en.wikipedia.org/wiki/Mutualism_(economic_theory)#Formulation_by_Proudhon",
-        200,
-        450,
+        175,
+        475,
         [
             [
                 "Saint-Simonianism"
@@ -785,7 +785,7 @@
     "National Popular Rally": [
         "lf",
         "https://en.wikipedia.org/wiki/National_Popular_Rally",
-        325,
+        300,
         1250,
         [
             [
@@ -845,7 +845,7 @@
     "Neosocialism": [
         "li",
         "https://en.wikipedia.org/wiki/Neosocialism",
-        325,
+        300,
         1150,
         [
             [
@@ -920,8 +920,8 @@
     "Paternalistic Conservatism": [
         "ci",
         "https://en.wikipedia.org/wiki/Paternalistic_conservatism",
-        650,
-        1425,
+        600,
+        1475,
         [
             [
                 "Neosocialism",
@@ -932,7 +932,7 @@
     "Planism": [
         "li",
         "https://en.wikipedia.org/wiki/Planned_economy",
-        275,
+        250,
         1000
     ],
     "Plebiscitary Populism": [
@@ -970,7 +970,7 @@
     "Possibilism": [
         "li",
         "https://en.wikipedia.org/wiki/Possibilism_(politics)",
-        100,
+        75,
         575
     ],
     "Poujadism": [
@@ -1024,7 +1024,7 @@
     "Radical Republicans": [
         "lf",
         "https://en.wikipedia.org/wiki/Classical_radicalism#France",
-        200,
+        175,
         700,
         [
             [
@@ -1070,8 +1070,8 @@
     "Rally of Republican Lefts": [
         "cf",
         "https://en.wikipedia.org/wiki/Rally_of_Republican_Lefts",
-        600,
-        1275,
+        625,
+        1325,
         [
             [
                 "Democratic and Socialist Union"
@@ -1093,8 +1093,8 @@
     "Rally of the French People": [
         "df",
         "https://en.wikipedia.org/wiki/Rally_of_the_French_People",
-        825,
-        1425,
+        875,
+        1400,
         [
             [
                 "Gaullism"
@@ -1134,7 +1134,7 @@
     "Red and Green Alternative": [
         "lf",
         "https://en.wikipedia.org/wiki/Alternative_Rouge_et_Verte",
-        100,
+        75,
         1775,
         [
             [
@@ -1157,7 +1157,7 @@
     "Renaissance": [
         "cc",
         "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
-        575,
+        600,
         2100,
         [
             [
@@ -1191,7 +1191,7 @@
     "Republican Party of Liberty": [
         "df",
         "https://en.wikipedia.org/wiki/Republican_Party_of_Liberty",
-        775,
+        800,
         1300,
         [
             [
@@ -1230,7 +1230,7 @@
     "Revolutionary Socialist Workers' Party": [
         "lf",
         "https://en.wikipedia.org/wiki/Revolutionary_Socialist_Workers'_Party_(France)",
-        250,
+        225,
         850,
         [
             [
@@ -1253,7 +1253,7 @@
     "SFIO": [
         "lf",
         "https://en.wikipedia.org/wiki/French_Section_of_the_Workers'_International",
-        175,
+        150,
         975,
         [
             [
@@ -1273,7 +1273,7 @@
     "Situationist International": [
         "lf",
         "https://en.wikipedia.org/wiki/Situationist_International",
-        100,
+        75,
         1500,
         [
             [
@@ -1310,7 +1310,7 @@
     "Social Democracy": [
         "li",
         "https://en.wikipedia.org/wiki/Social_democracy",
-        100,
+        75,
         925
     ],
     "Social Party": [
@@ -1333,7 +1333,7 @@
     "Socialist Feminism": [
         "li",
         "https://en.wikipedia.org/wiki/Socialist_feminism",
-        175,
+        150,
         1800,
         [
             [
@@ -1364,13 +1364,13 @@
     "Syndicalism": [
         "li",
         "https://en.wikipedia.org/wiki/Syndicalism",
-        250,
+        225,
         925
     ],
     "The Aftermath": [
         "lc",
         "https://en.wikipedia.org/wiki/L'Après",
-        150,
+        125,
         2175,
         [
             [
@@ -1387,7 +1387,7 @@
     "The Alternatives": [
         "lf",
         "https://en.wikipedia.org/wiki/Les_Alternatifs",
-        100,
+        75,
         1925,
         [
             [
@@ -1439,7 +1439,7 @@
     "Third Way": [
         "ci",
         "https://en.wikipedia.org/wiki/Third_Way",
-        500,
+        525,
         2050
     ],
     "Tixier-Vignancour Committees": [
@@ -1451,7 +1451,7 @@
     "Together": [
         "lf",
         "https://en.wikipedia.org/wiki/Ensemble!",
-        100,
+        75,
         2025,
         [
             [
@@ -1465,7 +1465,7 @@
     "Trotskyism": [
         "li",
         "https://en.wikipedia.org/wiki/Trotskyism",
-        175,
+        150,
         2075
     ],
     "Ultra-Royalists": [
@@ -1485,7 +1485,7 @@
     "Unified Socialist Party": [
         "lf",
         "https://en.wikipedia.org/wiki/Unified_Socialist_Party_(France)",
-        275,
+        250,
         1500,
         [
             [
@@ -1514,8 +1514,8 @@
     "Union for the New Republic": [
         "df",
         "https://en.wikipedia.org/wiki/Union_for_the_New_Republic",
-        775,
-        1500,
+        800,
+        1475,
         [
             [
                 "Paternalistic Conservatism"
@@ -1542,7 +1542,7 @@
     "Utopian Socialism": [
         "li",
         "https://en.wikipedia.org/wiki/Utopian_socialism",
-        275,
+        250,
         550,
         [
             [
@@ -1553,7 +1553,7 @@
     "Workers' Party": [
         "lf",
         "https://en.wikipedia.org/wiki/French_Workers' Party",
-        100,
+        75,
         750,
         [
             [
@@ -1567,7 +1567,7 @@
     "Workers' Self-Management": [
         "li",
         "https://en.wikipedia.org/wiki/Workers'_self-management",
-        200,
+        175,
         1450
     ],
     "Young Nation": [

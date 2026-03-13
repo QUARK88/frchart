@@ -187,6 +187,38 @@ body.editing .node__text {
     padding: 0;
 }
 
+#spectrum {
+    position: absolute;
+    top: 375px;
+    left: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 1100px;
+    height: 1850px;
+    z-index: 0;
+    opacity: .15;
+}
+
+#spectrum #l{
+    background-color: var(--left);
+}
+
+#spectrum #g{
+    background-color: var(--centerLeft);
+}
+
+#spectrum #c{
+    background-color: var(--center);
+}
+
+#spectrum #d{
+    background-color: var(--centerRight);
+}
+
+#spectrum #r{
+    background-color: var(--right);
+}
+
 #title {
     position: absolute;
     top: 48px;
@@ -271,7 +303,7 @@ body.editing .node__text {
     display: flex;
     flex-direction: column;
     top: 304px;
-    left: 1475px;
+    left: 1240px;
     width: 32px;
     z-index: 3;
 }
@@ -294,7 +326,7 @@ body.editing .node__text {
     display: flex;
     flex-direction: column;
     top: 134px;
-    left: 1250px;
+    left: 1300px;
     gap: 32px;
     font-size: 24px;
     z-index: 3;
