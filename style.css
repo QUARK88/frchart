@@ -199,30 +199,30 @@ body.editing .node__text {
     opacity: .15;
 }
 
-#spectrum #l{
+#spectrum #l {
     background-color: var(--left);
 }
 
-#spectrum #g{
+#spectrum #g {
     background-color: var(--centerLeft);
 }
 
-#spectrum #c{
+#spectrum #c {
     background-color: var(--center);
 }
 
-#spectrum #d{
+#spectrum #d {
     background-color: var(--centerRight);
 }
 
-#spectrum #r{
+#spectrum #r {
     background-color: var(--right);
 }
 
 #title {
     position: absolute;
     top: 48px;
-    left: 272px;
+    left: 304px;
     font-size: 64px;
     width: fit-content;
 }
@@ -234,7 +234,7 @@ body.editing .node__text {
     width: 192px;
     position: absolute;
     top: 160px;
-    left: 96px;
+    left: 160px;
     font-size: 16px;
     z-index: 3;
 }
@@ -254,7 +254,7 @@ body.editing .node__text {
 #nodesLegend {
     position: absolute;
     top: 144px;
-    left: 352px;
+    left: 384px;
     height: fit-content;
     width: fit-content;
     display: flex;
