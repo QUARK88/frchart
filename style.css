@@ -180,7 +180,7 @@ body.editing .node__text {
 
 #zoomZone {
     position: relative;
-    width: 1575px;
+    width: 1700px;
     height: 2275px;
     z-index: 0;
     margin: 0;
@@ -193,7 +193,7 @@ body.editing .node__text {
     left: 75px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 1125px;
+    width: 1250px;
     height: 1850px;
     z-index: 0;
     opacity: .15;
@@ -222,7 +222,7 @@ body.editing .node__text {
 #title {
     position: absolute;
     top: 48px;
-    left: 304px;
+    left: 352px;
     font-size: 64px;
     width: fit-content;
 }
@@ -234,7 +234,7 @@ body.editing .node__text {
     width: 192px;
     position: absolute;
     top: 160px;
-    left: 160px;
+    left: 208px;
     font-size: 16px;
     z-index: 3;
 }
@@ -254,7 +254,7 @@ body.editing .node__text {
 #nodesLegend {
     position: absolute;
     top: 144px;
-    left: 384px;
+    left: 448px;
     height: fit-content;
     width: fit-content;
     display: flex;
@@ -303,7 +303,7 @@ body.editing .node__text {
     display: flex;
     flex-direction: column;
     top: 304px;
-    left: 1265px;
+    left: 1390px;
     width: 32px;
     z-index: 3;
 }
@@ -326,7 +326,7 @@ body.editing .node__text {
     display: flex;
     flex-direction: column;
     top: 134px;
-    left: 1325px;
+    left: 1450px;
     gap: 32px;
     font-size: 24px;
     z-index: 3;

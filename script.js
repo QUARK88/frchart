@@ -277,7 +277,9 @@ function renderNodes(data) {
             case "f": shape.classList.add("node__shape--faction"); types.push("Faction/Party"); break
             case "c": shape.classList.add("node__shape--current"); types.push("Current Faction/Party"); break
         }
-        title = `${name}\n\n${types[0]} ${types[1]}`
+        const precursors = NODE_DATA[name][4] || []
+        const precursorsText = precursors.length ? "\n\nComes from:\n" + precursors.map(p => p.length > 1 ? `${p[0]} (${p[1]})` : p[0]).join("\n") : ""
+        title = `${name}\n${types[0]} ${types[1]}${precursorsText}`
         const container = document.createElement("a")
         container.className = "node"
         container.dataset.key = name
@@ -334,15 +336,15 @@ function defineArrowMarker(svg, partyKey = "n") {
     if (svg.querySelector(`#${id}`)) return
     const marker = document.createElementNS("http://www.w3.org/2000/svg", "marker")
     marker.setAttribute("id", id)
-    marker.setAttribute("markerWidth", "21")
+    marker.setAttribute("markerWidth", "22")
     marker.setAttribute("markerHeight", "12")
-    marker.setAttribute("refX", "21")
+    marker.setAttribute("refX", "22")
     marker.setAttribute("refY", "6")
     marker.setAttribute("orient", "auto")
     marker.setAttribute("markerUnits", "userSpaceOnUse")
     marker.setAttribute("overflow", "visible")
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path")
-    path.setAttribute("d", "M0,1.5 L21,6 L0,10.5 Z")
+    path.setAttribute("d", "M0,1 L22,6 L0,11 Z")
     path.classList.add(
         "arrowhead",
         PARTY_ARROWHEAD_CLASS[partyKey] || "arrowhead--grey"
