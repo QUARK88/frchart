@@ -282,8 +282,8 @@
     "Conservatism": [
         "di",
         "https://en.wikipedia.org/wiki/Conservatism",
-        975,
-        450
+        950,
+        375
     ],
     "Conservative Revolution": [
         "ri",
@@ -410,7 +410,7 @@
     "Euroscepticism": [
         "ni",
         "https://en.wikipedia.org/wiki/Euroscepticism#France",
-        950,
+        925,
         2025
     ],
     "Executive Centralism": [
@@ -669,7 +669,7 @@
     "Identitarianism": [
         "ri",
         "https://en.wikipedia.org/wiki/Identitarian_movement",
-        1100,
+        1075,
         1725,
         [
             [
@@ -801,7 +801,7 @@
     "Legitimists": [
         "rf",
         "https://en.wikipedia.org/wiki/Legitimists",
-        1225,
+        1200,
         525,
         [
             [
@@ -953,7 +953,7 @@
     "National Rally": [
         "dc",
         "https://en.wikipedia.org/wiki/National_Rally",
-        975,
+        950,
         2100,
         [
             [
@@ -1045,7 +1045,7 @@
     "New Right": [
         "ri",
         "https://en.wikipedia.org/wiki/Nouvelle_Droite",
-        1100,
+        1075,
         1550,
         [
             [
@@ -1266,6 +1266,9 @@
         1400,
         [
             [
+                "Executive Centralism"
+            ],
+            [
                 "Gaullism"
             ],
             [
@@ -1436,7 +1439,7 @@
     "Saint-Simonianism": [
         "li",
         "https://en.wikipedia.org/wiki/Henri_de_Saint-Simon#Ideas",
-        250,
+        200,
         375
     ],
     "Situationist International": [
@@ -1653,7 +1656,7 @@
     "Ultra-Royalists": [
         "rf",
         "https://en.wikipedia.org/wiki/Ultra-royalist",
-        1225,
+        1200,
         375,
         [
             [
@@ -1716,7 +1719,7 @@
     "Union for the New Republic": [
         "df",
         "https://en.wikipedia.org/wiki/Union_for_the_New_Republic",
-        925,
+        950,
         1475,
         [
             [
@@ -1730,7 +1733,7 @@
     "Union of Democrats for the Republic": [
         "df",
         "https://en.wikipedia.org/wiki/Union_of_Democrats_for_the_Republic",
-        900,
+        950,
         1550,
         [
             [

@@ -243,16 +243,27 @@ function enableDragging() {
 function copyUpdatedJSON() {
     const sorted = Object.fromEntries(
         Object.keys(NODE_DATA)
-            .sort((a, b) => a.localeCompare(b))
-            .map(key => {
+            .sort((a, b) => a.localeCompare(b)).map(key => {
                 const node = NODE_DATA[key]
-                const relations = Array.isArray(node[4])
-                    ? [...node[4]].sort((a, b) => a[0].localeCompare(b[0]))
-                    : null
+                let relations = Array.isArray(node[4]) ? node[4] : []
+                relations = relations
+                    .map(r => {
+                        if (typeof r[0] === "string") {
+                            const match = r[0].match(/^(.+?)\((.+)\)$/)
+                            if (match) return [match[1].trim(), match[2].trim()]
+                        }
+                        return r
+                    }).filter(r => NODE_DATA[r[0]])
+                const seen = new Set()
+                relations = relations.filter(r => {
+                    const id = r[0] + "|" + (r[1] || "")
+                    if (seen.has(id)) return false
+                    seen.add(id)
+                    return true
+                })
+                relations.sort((a, b) => a[0].localeCompare(b[0]))
                 const base = [node[0], node[1], node[2], node[3]]
-                return relations && relations.length
-                    ? [key, [...base, relations]]
-                    : [key, base]
+                return relations.length ? [key, [...base, relations]] : [key, base]
             })
     )
     navigator.clipboard.writeText(JSON.stringify(sorted, null, 4))
