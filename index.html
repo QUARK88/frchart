@@ -23,15 +23,16 @@
         <button id="warningButton">OK</button>
     </div>
     <div id="controls">
-        <label class="theme-toggle" style="grid-area:1/1/2/2;">
+        <label class="theme-toggle">
             <input type="checkbox" id="themeToggle">
             <span class="theme-toggle__icon"></span>
         </label>
-        <button onclick="toggleEditMode()" style="grid-area:2/1/3/2;">EDIT</button>
-        <button onclick="copyUpdatedJSON()" style="grid-area:3/1/4/2;">JSON</button>
-        <button onclick="undo()" style="grid-area:4/1/5/2;">UNDO</button>
-        <button onclick="redo()" style="grid-area:5/1/6/2;">REDO</button>
-        <input id="zoomSlider" type="range" style="grid-area:1/2/2/3;display:none;">
+        <button onclick="toggleEditMode()">EDIT</button>
+        <button onclick="copyUpdatedJSON()">JSON</button>
+        <button onclick="undo()">UNDO</button>
+        <button onclick="redo()">REDO</button>
+        <button onclick="toggleLanguage()">LANG</button>
+        <input id="zoomSlider" type="range" style="grid-area:3/1/4/4;">
     </div>
     <div id="zoomZone">
         <div id="spectrum">
@@ -41,8 +42,9 @@
             <div id="d"></div>
             <div id="r"></div>
         </div>
-        <section id="title">French Political History (1851-2026)</section>
-        <section id="nodesLegend">
+        <section id="title" class="en">French Political History (1851-2026)</section>
+        <section id="title" class="fr">Histoire Politique Française (1851-2026)</section>
+        <section id="nodesLegend" class="en">
             <div class="nodesLegend__line">
                 <h2>Colors:</h2>
                 <div class="nodesLegend__grid">
@@ -68,7 +70,7 @@
                     </a>
                     <a class="nodeInfo" target="_blank" title="Non-sided or multi-sided">
                         <div class="node__shape node__shape--grey node__shape--ideology"></div>
-                        <div class="nodeInfo__text">Non-Sided or Mutli-Sided</div>
+                        <div class="nodeInfo__text">Non-Sided or Multi-Sided</div>
                     </a>
                 </div>
             </div>
@@ -90,48 +92,117 @@
                 </div>
             </div>
         </section>
+        <section id="nodesLegend" class="fr">
+            <div class="nodesLegend__line">
+                <h2>Couleurs:</h2>
+                <div class="nodesLegend__grid">
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Left-wing_politics" target="_blank" title="Gauche">
+                        <div class="node__shape node__shape--left node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Gauche</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centre-left_politics" target="_blank" title="Centre Gauche">
+                        <div class="node__shape node__shape--centerLeft node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Centre Gauche</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centrism" target="_blank" title="Centre">
+                        <div class="node__shape node__shape--center node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Centre</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centre-right_politics" target="_blank" title="Centre Droite">
+                        <div class="node__shape node__shape--centerRight node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Centre Droite</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Right-wing_politics" target="_blank" title="Droite">
+                        <div class="node__shape node__shape--right node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Droite</div>
+                    </a>
+                    <a class="nodeInfo" target="_blank" title="Non-Partisan/Multi-Partisan">
+                        <div class="node__shape node__shape--grey node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Non-Partisan/Multi-Partisan</div>
+                    </a>
+                </div>
+            </div>
+            <div class="nodesLegend__line">
+                <h2>Formes:</h2>
+                <div class="nodesLegend__grid">
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Politics_of_France" target="_blank" title="Idéologie Politique">
+                        <div class="node__shape node__shape--grey node__shape--ideology"></div>
+                        <div class="nodeInfo__text">Idéologie Politique</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/List_of_political_parties_in_France#Historical_parties" target="_blank" title="Faction/Parti Politique">
+                        <div class="node__shape node__shape--grey node__shape--faction"></div>
+                        <div class="nodeInfo__text">Faction/Parti Politique</div>
+                    </a>
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/List_of_political_parties_in_France" target="_blank" title="Faction/Parti Actuel (2026)" style="gap:16px!important">
+                        <div class="node__shape node__shape--grey node__shape--current" style="transform:rotate(45deg)!important"></div>
+                        <div class="nodeInfo__text">Faction/Parti Actuel (2026)</div>
+                    </a>
+                </div>
+            </div>
+        </section>
         <div id="timeline"></div>
         <section id="eventsLegend">
-            <h2>Approximate eras timeline</h2>
+            <h2 class="event en">Approximate eras timeline</h2>
+            <h2 class="event fr">Ligne du temps approximative</h2>
             <a class="event" href="https://en.wikipedia.org/wiki/1851_French_coup_d'état" target="_blank" title="The Second Empire">
-                <h2 class="event__text">The Imperial Coup</h2>
+                <h2 class="event__text en">The Imperial Coup</h2>
+                <h2 class="event__text fr">Le Coup Impérial</h2>
                 <img class="event__image" src="./assets/events/Second Empire.jpg">
             </a>
             <a class="event" href="https://en.wikipedia.org/wiki/Franco-Prussian_War" target="_blank" title="The Prussian War">
-                <h2 class="event__text">The Prussian War</h2>
+                <h2 class="event__text en">The Prussian War</h2>
+                <h2 class="event__text fr">La Guerre Prussienne</h2>
                 <img class="event__image" src="./assets/events/Prussian War.jpg">
             </a>
             <a class="event" href="https://en.wikipedia.org/wiki/Dreyfus_affair" target="_blank" title="The Dreyfus Affair">
-                <h2 class="event__text">The Dreyfus Affair</h2>
+                <h2 class="event__text en">The Dreyfus Affair</h2>
+                <h2 class="event__text fr">L'Affaire Dreyfus</h2>
                 <img class="event__image" src="./assets/events/Dreyfus Affair.jpg">
             </a>
             <a class="event" href="https://en.wikipedia.org/wiki/French_entry_into_World_War_I" target="_blank" title="The Great War">
-                <h2 class="event__text">The Great War</h2>
+                <h2 class="event__text en">The Great War</h2>
+                <h2 class="event__text fr">La Grande Guerre</h2>
                 <img class="event__image" src="./assets/events/Great War.jpg">
             </a>
             <a class="event" href="https://en.wikipedia.org/wiki/6_February_1934_crisis" target="_blank" title="The Veterans' Riot">
-                <h2 class="event__text">The Veterans' Riot</h2>
+                <h2 class="event__text en">The Veterans' Riot</h2>
+                <h2 class="event__text fr">L'Émeute des Vétérans</h2>
                 <img class="event__image" src="./assets/events/Veteran Riot.jpg">
             </a>
             <a class="event" href="https://en.wikipedia.org/wiki/Algerian_War" target="_blank" title="The Algerian and Indochinese Wars">
-                <h2 class="event__text">The Algerian and Indochinese Wars</h2>
+                <h2 class="event__text en">The Algerian and Indochinese Wars</h2>
+                <h2 class="event__text fr">Les Guerres d'Algérie et d'Indochine</h2>
                 <img class="event__image" src="./assets/events/Dien Bien Phu.jpg">
             </a>
             <a class="event" href="https://en.wikipedia.org/wiki/May_68" target="_blank" title="The May 1968 Riots">
-                <h2 class="event__text">The May 1968 Riots</h2>
+                <h2 class="event__text en">The May 1968 Riots</h2>
+                <h2 class="event__text fr">Les Émeutes de Mai 1968</h2>
                 <img class="event__image" src="./assets/events/Caca.jpg">
             </a>
             <a class="event" href="https://en.wikipedia.org/wiki/Maastricht_Treaty" target="_blank" title="The Maastricht Treaty">
-                <h2 class="event__text">The Maastricht Treaty</h2>
+                <h2 class="event__text en">The Maastricht Treaty</h2>
+                <h2 class="event__text fr">Le Traité de Maastricht</h2>
                 <img class="event__image" src="./assets/events/EU.jpg">
             </a>
             <a class="event" href="https://en.wikipedia.org/wiki/Yellow_vests_protests" target="_blank" title="The Yellow Vests Protests">
-                <h2 class="event__text">The Yellow Vests Protests</h2>
+                <h2 class="event__text en">The Yellow Vests Protests</h2>
+                <h2 class="event__text fr">Les Manifestations des Gilets Jaunes</h2>
                 <img class="event__image" src="./assets/events/Larpers.jpg">
             </a>
         </section>
-        <section id="relatedSites">
+        <section id="relatedSites" class="en">
             Related projects:
+            <a class="relatedSite" target="_blank" href="https://quark88.github.io/canchart">
+                <img class="relatedSite__icon" src="https://raw.githubusercontent.com/QUARK88/canchart/refs/heads/main/assets/logos/embed.png">
+                CanChart
+            </a>
+            <a class="relatedSite" target="_blank" href="https://quark88.github.io/uschart">
+                <img class="relatedSite__icon" src="https://raw.githubusercontent.com/QUARK88/uschart/refs/heads/main/assets/logos/embed.png">
+                USChart
+            </a>
+        </section>
+        <section id="relatedSites" class="fr">
+            Projets connexes:
             <a class="relatedSite" target="_blank" href="https://quark88.github.io/canchart">
                 <img class="relatedSite__icon" src="https://raw.githubusercontent.com/QUARK88/canchart/refs/heads/main/assets/logos/embed.png">
                 CanChart

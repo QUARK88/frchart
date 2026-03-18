@@ -89,16 +89,13 @@ body.editing .node__text {
 #controls {
     position: fixed;
     display: grid;
-    grid-template-columns: 64px 128px;
-    grid-template-rows: 48px 48px 48px 48px 48px;
+    grid-template-columns: 64px 64px 64px;
+    grid-template-rows: 48px 48px 48px;
     align-items: center;
     gap: 16px;
-    /*top: 16px;
-    left: 16px;*/
-    top: -176px;
-    left: 64px;
+    top: 16px;
+    left: 16px;
     z-index: 1000;
-    rotate: -90deg;
 }
 
 #controls button,
@@ -303,7 +300,7 @@ body.editing .node__text {
     display: flex;
     flex-direction: column;
     top: 304px;
-    left: 1390px;
+    left: 1385px;
     width: 32px;
     z-index: 3;
 }
@@ -325,9 +322,9 @@ body.editing .node__text {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 134px;
+    top: 32px;
     left: 1450px;
-    gap: 32px;
+    gap: 0;
     font-size: 24px;
     z-index: 3;
     width: 192px;
@@ -340,7 +337,7 @@ body.editing .node__text {
     justify-content: end;
     gap: 8px;
     width: 192px;
-    height: 192px;
+    height: 218px;
 }
 
 .event__text {

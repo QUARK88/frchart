@@ -29,11 +29,13 @@ warningButton.addEventListener("click", () => {
     localStorage.setItem("warned", true)
     warning.style.display = "none"
 })
-const TYPE = 0
-const URL = 1
-const X = 2
-const Y = 3
-const IN = 4
+let LANG = "EN"
+const FR = 0
+const TYPE = 1
+const URL = 2
+const X = 3
+const Y = 4
+const IN = 5
 const chart = document.getElementById("chart")
 const arrows = document.getElementById("arrows")
 fetch("./nodes.json")
@@ -42,6 +44,12 @@ fetch("./nodes.json")
         NODE_DATA = data
         render()
     })
+function toggleLanguage() {
+    LANG = LANG === "EN" ? "FR" : "EN"
+    document.querySelectorAll(".en").forEach(e => e.style.display = LANG === "EN" ? "" : "none")
+    document.querySelectorAll(".fr").forEach(e => e.style.display = LANG === "FR" ? "" : "none")
+    render()
+}
 document.addEventListener("mousedown", e => {
     const menu = document.getElementById("nodeEditor")
     if (!menu) return
@@ -59,13 +67,17 @@ function openNodeEditor(key, x, y) {
     title.style.fontSize = "16px"
     title.style.marginBottom = "4px"
     menu.appendChild(title)
+    const frInput = document.createElement("input")
+    frInput.placeholder = "French name"
+    frInput.value = NODE_DATA[key][FR] || ""
+    menu.appendChild(frInput)
     const typeInput = document.createElement("input")
     typeInput.placeholder = "Type"
-    typeInput.value = NODE_DATA[key][0] || ""
+    typeInput.value = NODE_DATA[key][TYPE] || ""
     menu.appendChild(typeInput)
     const linkInput = document.createElement("input")
     linkInput.placeholder = "Link"
-    linkInput.value = NODE_DATA[key][1] || ""
+    linkInput.value = NODE_DATA[key][URL] || ""
     menu.appendChild(linkInput)
     const precursorsContainer = document.createElement("div")
     precursorsContainer.style.display = "flex"
@@ -83,15 +95,16 @@ function openNodeEditor(key, x, y) {
         }
         precursorsContainer.appendChild(input)
     }
-    const existingPrecursors = NODE_DATA[key][4] || []
+    const existingPrecursors = NODE_DATA[key][IN] || []
     existingPrecursors.forEach(p => {
-        if (p.length > 1)
-            addPrecursorInput(p[0] + "(" + p[1] + ")")
-        else
-            addPrecursorInput(p[0])
+        if (p.length > 1) {
+            const txt = Array.isArray(p[1]) ? p[1][0] + "|" + p[1][1] : p[1]
+            addPrecursorInput(p[0] + "(" + txt + ")")
+        } else addPrecursorInput(p[0])
     })
     addPrecursorInput()
     function save() {
+        const newFR = frInput.value.trim()
         const newType = typeInput.value.trim()
         if (newType === "") {
             delete NODE_DATA[key]
@@ -99,23 +112,24 @@ function openNodeEditor(key, x, y) {
             render()
             return
         }
-        NODE_DATA[key][0] = newType
-        NODE_DATA[key][1] = linkInput.value.trim()
+        NODE_DATA[key][FR] = newFR || key
+        NODE_DATA[key][TYPE] = newType
+        NODE_DATA[key][URL] = linkInput.value.trim()
         const inputs = [...precursorsContainer.querySelectorAll("input")]
         const newPrecursors = []
         inputs.forEach(i => {
             const val = i.value.trim()
             if (val === "") return
             const match = val.match(/^(.+?)\((.+)\)$/)
-            if (match)
-                newPrecursors.push([match[1].trim(), match[2].trim()])
-            else
-                newPrecursors.push([val])
+            if (match) {
+                const parts = match[2].split("|").map(s => s.trim())
+                if (parts.length === 2) newPrecursors.push([match[1].trim(), [parts[0], parts[1]]])
+                else newPrecursors.push([match[1].trim(), parts[0]])
+            }
+            else newPrecursors.push([val])
         })
-        if (newPrecursors.length > 0)
-            NODE_DATA[key][4] = newPrecursors
-        else
-            delete NODE_DATA[key][4]
+        if (newPrecursors.length > 0) NODE_DATA[key][IN] = newPrecursors
+        else delete NODE_DATA[key][IN]
         menu.remove()
         render()
     }
@@ -160,7 +174,7 @@ document.addEventListener("contextmenu", e => {
     if (!title || NODE_DATA[title]) return
     pushUndoState()
     REDO_STACK.length = 0
-    NODE_DATA[title] = ["ni", "", snappedX, snappedY]
+    NODE_DATA[title] = [title, "ni", "", snappedX, snappedY]
     render()
 })
 function pushUndoState() {
@@ -225,8 +239,8 @@ function enableDragging() {
                 const rawY = ev.clientY - rect.top
                 const snappedX = Math.round(rawX / GRID) * GRID
                 const snappedY = Math.round(rawY / GRID) * GRID
-                NODE_DATA[key][2] = snappedX
-                NODE_DATA[key][3] = snappedY
+                NODE_DATA[key][X] = snappedX
+                NODE_DATA[key][Y] = snappedY
                 el.style.left = snappedX + "px"
                 el.style.top = snappedY + "px"
                 arrows.innerHTML = ""
@@ -245,7 +259,7 @@ function copyUpdatedJSON() {
         Object.keys(NODE_DATA)
             .sort((a, b) => a.localeCompare(b)).map(key => {
                 const node = NODE_DATA[key]
-                let relations = Array.isArray(node[4]) ? node[4] : []
+                let relations = Array.isArray(node[IN]) ? node[IN] : []
                 relations = relations
                     .map(r => {
                         if (typeof r[0] === "string") {
@@ -262,7 +276,7 @@ function copyUpdatedJSON() {
                     return true
                 })
                 relations.sort((a, b) => a[0].localeCompare(b[0]))
-                const base = [node[0], node[1], node[2], node[3]]
+                const base = [node[FR], node[TYPE], node[URL], node[X], node[Y]]
                 return relations.length ? [key, [...base, relations]] : [key, base]
             })
     )
@@ -288,9 +302,19 @@ function renderNodes(data) {
             case "f": shape.classList.add("node__shape--faction"); types.push("Faction/Party"); break
             case "c": shape.classList.add("node__shape--current"); types.push("Current Faction/Party"); break
         }
-        const precursors = NODE_DATA[name][4] || []
-        const precursorsText = precursors.length ? "\n\nComes from:\n" + precursors.map(p => p.length > 1 ? `${p[0]} (${p[1]})` : p[0]).join("\n") : ""
-        title = `${name}\n${types[0]} ${types[1]}${precursorsText}`
+        const precursors = NODE_DATA[name][IN] || []
+        const precursorsText = precursors.length
+            ? "\n\n" + (LANG === "FR" ? "Provient de :" : "Comes from:") + "\n" + precursors.map(p => {
+                const nodeName = LANG === "FR" ? (NODE_DATA[p[0]]?.[FR] || p[0]) : p[0]
+                if (p.length > 1) {
+                    const txt = Array.isArray(p[1]) ? (LANG === "FR" ? p[1][1] || p[1][0] : p[1][0]) : p[1]
+                    return `${nodeName} (${txt})`
+                }
+                return nodeName
+            }).join("\n")
+            : ""
+        const displayName = LANG === "FR" ? (node[FR] || name) : name
+        title = `${displayName}\n${types[0]} ${types[1]}${precursorsText}`
         const container = document.createElement("a")
         container.className = "node"
         container.dataset.key = name
@@ -299,7 +323,7 @@ function renderNodes(data) {
         container.title = title
         const text = document.createElement("a")
         text.className = "node__text"
-        text.textContent = name
+        text.textContent = LANG === "FR" ? (node[FR] || name) : name
         text.title = title
         text.draggable = false
         if (node[URL]) {
@@ -458,7 +482,8 @@ function renderArrows(data) {
                 fo.style.overflow = "visible"
                 const div = document.createElement("div")
                 div.className = "arrow__text"
-                div.textContent = label
+                const txt = Array.isArray(label) ? (LANG === "FR" ? label[1] || label[0] : label[0]) : label
+                div.textContent = txt
                 fo.appendChild(div)
                 arrows.appendChild(fo)
             }
@@ -496,3 +521,4 @@ applyZoom(100)
 html.style.minWidth = "100%"
 html.style.maxWidth = "fit-content"
 generateTimeline()
+document.querySelectorAll(".fr").forEach(e => e.style.display = "none")
