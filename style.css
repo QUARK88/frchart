@@ -12,13 +12,11 @@
     --center: #e0a000;
     --centerRight: #40a060;
     --right: #0060c0;
-    --chart: url("./assets/lchart.png")
 }
 
 :root.dark {
     --bg: #202020;
     --fg: #ffffff;
-    --chart: url("./assets/dchart.png")
 }
 
 * {
@@ -43,7 +41,7 @@ html {
     align-items: start;
     justify-content: center;
     background-color: var(--bg);
-    width: 2900px;
+    width: 3400px;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 

@@ -290,17 +290,17 @@ function renderNodes(data) {
         shape.draggable = false
         shape.classList.add("node__shape")
         switch (type[0]) {
-            case "l": shape.classList.add("node__shape--left"); types.push("Leftist"); break
-            case "g": shape.classList.add("node__shape--centerLeft"); types.push("Center-Leftist"); break
-            case "c": shape.classList.add("node__shape--center"); types.push("Centrist"); break
-            case "d": shape.classList.add("node__shape--centerRight"); types.push("Center-Rightist"); break
-            case "r": shape.classList.add("node__shape--right"); types.push("Rightist"); break
-            case "n": shape.classList.add("node__shape--grey"); types.push("Non/Multi-Sided"); break
+            case "l": shape.classList.add("node__shape--left"); types.push(LANG === "FR" ? "Gauche" : "Leftist"); break
+            case "g": shape.classList.add("node__shape--centerLeft"); types.push(LANG === "FR" ? "Centre-gauche" : "Center-Leftist"); break
+            case "c": shape.classList.add("node__shape--center"); types.push(LANG === "FR" ? "Centre" : "Centrist"); break
+            case "d": shape.classList.add("node__shape--centerRight"); types.push(LANG === "FR" ? "Centre-droite" : "Center-Rightist"); break
+            case "r": shape.classList.add("node__shape--right"); types.push(LANG === "FR" ? "Droite" : "Rightist"); break
+            case "n": shape.classList.add("node__shape--grey"); types.push(LANG === "FR" ? "Non-campé/Multi-camp" : "Non/Multi-Sided"); break
         }
         switch (type[1]) {
-            case "i": shape.classList.add("node__shape--ideology"); types.push("Ideology"); break
-            case "f": shape.classList.add("node__shape--faction"); types.push("Faction/Party"); break
-            case "c": shape.classList.add("node__shape--current"); types.push("Current Faction/Party"); break
+            case "i": shape.classList.add("node__shape--ideology"); types.push(LANG === "FR" ? "Idéologie" : "Ideology"); break
+            case "f": shape.classList.add("node__shape--faction"); types.push(LANG === "FR" ? "Faction/Parti" : "Faction/Party"); break
+            case "c": shape.classList.add("node__shape--current"); types.push(LANG === "FR" ? "Faction/Parti actuel" : "Current Faction/Party"); break
         }
         const precursors = NODE_DATA[name][IN] || []
         const precursorsText = precursors.length
@@ -314,7 +314,17 @@ function renderNodes(data) {
             }).join("\n")
             : ""
         const displayName = LANG === "FR" ? (node[FR] || name) : name
-        title = `${displayName}\n${types[0]} ${types[1]}${precursorsText}`
+        let typeText
+        if (LANG === "FR") {
+            const pos = types[0]?.toLowerCase()
+            const nature = types[1]
+            let de = "de "
+            if (pos === "non-campé/multi-camp") {
+                de = ""
+            }
+            typeText = `${nature} ${de}${pos}`
+        } else typeText = `${types[0]} ${types[1]}`
+        title = `${displayName}\n${typeText}${precursorsText}`
         const container = document.createElement("a")
         container.className = "node"
         container.dataset.key = name
