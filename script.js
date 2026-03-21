@@ -1,12 +1,13 @@
 let UNDO_STACK = []
 let REDO_STACK = []
 const MAX_UNDO = 50
-let EDIT_MODE = true
+let EDIT_MODE = false
 let NODE_DATA = null
 const GRID = 25
 const toggle = document.getElementById("themeToggle")
-const warning = document.getElementById("warning")
-const warningButton = document.getElementById("warningButton")
+const langToggle = document.getElementById("langToggle")
+/*const warning = document.getElementById("warning")
+const warningButton = document.getElementById("warningButton")*/
 const root = document.documentElement
 const savedTheme = localStorage.getItem("theme")
 if (savedTheme === "dark") {
@@ -22,13 +23,13 @@ toggle.addEventListener("change", () => {
         localStorage.setItem("theme", "light")
     }
 })
-if (localStorage.getItem("warned")) {
+/*if (localStorage.getItem("warned")) {
     warning.style.display = "none"
 }
 warningButton.addEventListener("click", () => {
     localStorage.setItem("warned", true)
     warning.style.display = "none"
-})
+})*/
 let LANG = "EN"
 const FR = 0
 const TYPE = 1
@@ -48,6 +49,7 @@ function toggleLanguage() {
     LANG = LANG === "EN" ? "FR" : "EN"
     document.querySelectorAll(".en").forEach(e => e.style.display = LANG === "EN" ? "" : "none")
     document.querySelectorAll(".fr").forEach(e => e.style.display = LANG === "FR" ? "" : "none")
+    langToggle.innerText = langToggle.innerText === "EN" ? "FR" : "EN";
     render()
 }
 document.addEventListener("mousedown", e => {
@@ -532,3 +534,4 @@ html.style.minWidth = "100%"
 html.style.maxWidth = "fit-content"
 generateTimeline()
 document.querySelectorAll(".fr").forEach(e => e.style.display = "none")
+document.body.classList.toggle("editing", EDIT_MODE)

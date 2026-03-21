@@ -87,10 +87,10 @@ body.editing .node__text {
 #controls {
     position: fixed;
     display: grid;
-    grid-template-columns: 64px 64px 64px;
-    grid-template-rows: 48px 48px 48px;
+    grid-template-columns: 64px 64px;
+    grid-template-rows: 48px 24px;
     align-items: center;
-    gap: 16px;
+    gap: 16px 12px;
     top: 16px;
     left: 16px;
     z-index: 1000;
@@ -167,7 +167,7 @@ body.editing .node__text {
 #zoomSlider::-webkit-slider-thumb,
 #zoomSlider::-moz-range-thumb {
     width: 16px;
-    height: 48px;
+    height: 32px;
     border-radius: 16px;
     border: none;
     background-color: var(--fg);

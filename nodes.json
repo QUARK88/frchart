@@ -3,7 +3,7 @@
         "Agrarisme",
         "ci",
         "https://en.wikipedia.org/wiki/Agrarianism",
-        675,
+        650,
         1400
     ],
     "Alter-Globalism": [
@@ -41,8 +41,8 @@
         "Travaillisme Anticommuniste",
         "gi",
         "https://en.wikipedia.org/wiki/Labour_movement",
-        500,
-        1200,
+        525,
+        1250,
         [
             [
                 "Revisionist Socialism"
@@ -467,7 +467,7 @@
         "Croix-de-Feu",
         "df",
         "https://en.wikipedia.org/wiki/Croix-de-Feu",
-        1000,
+        975,
         1100,
         [
             [
@@ -796,7 +796,7 @@
         "Indépendants et Paysans",
         "cc",
         "https://en.wikipedia.org/wiki/National_Centre_of_Independents_and_Peasants",
-        775,
+        750,
         1375,
         [
             [
@@ -1197,7 +1197,7 @@
         "Conservatisme Paternaliste",
         "ci",
         "https://en.wikipedia.org/wiki/Paternalistic_conservatism",
-        675,
+        650,
         1475,
         [
             [
@@ -1351,7 +1351,7 @@
         "Parti Radical-Socialiste",
         "gc",
         "https://en.wikipedia.org/wiki/Radical_Party_(France)",
-        500,
+        525,
         875,
         [
             [
@@ -1381,7 +1381,7 @@
         "Rassemblement des Gauches Républicaines",
         "cf",
         "https://en.wikipedia.org/wiki/Rally_of_Republican_Lefts",
-        700,
+        675,
         1325,
         [
             [
@@ -1504,7 +1504,7 @@
         "Fédération Républicaine",
         "df",
         "https://en.wikipedia.org/wiki/Republican_Federation",
-        850,
+        825,
         875,
         [
             [
@@ -1627,7 +1627,7 @@
         "Catholicisme Social",
         "di",
         "https://en.wikipedia.org/wiki/Catholic_social_teaching",
-        925,
+        900,
         950,
         [
             [
@@ -1653,7 +1653,7 @@
         "Parti Social",
         "df",
         "https://en.wikipedia.org/wiki/French_Social_Party",
-        975,
+        950,
         1200,
         [
             [

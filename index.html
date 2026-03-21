@@ -17,22 +17,22 @@
 </head>
 
 <body class="editing">
-    <div id="warning">
+    <!--<div id="warning">
         <div id="warningTitle">WARNING</div>
         <div id="warningText">This is far from completed and heavily subject to change. It is only for prototyping purposes and not to be taken seriously.</div>
         <button id="warningButton">OK</button>
-    </div>
+    </div>-->
     <div id="controls">
         <label class="theme-toggle">
             <input type="checkbox" id="themeToggle">
             <span class="theme-toggle__icon"></span>
         </label>
-        <button onclick="toggleEditMode()">EDIT</button>
+        <!--<button onclick="toggleEditMode()">EDIT</button>
         <button onclick="copyUpdatedJSON()">JSON</button>
         <button onclick="undo()">UNDO</button>
-        <button onclick="redo()">REDO</button>
-        <button onclick="toggleLanguage()">LANG</button>
-        <input id="zoomSlider" type="range" style="grid-area:3/1/4/4;">
+        <button onclick="redo()">REDO</button>-->
+        <button onclick="toggleLanguage()" id="langToggle">EN</button>
+        <input id="zoomSlider" type="range" style="grid-area:2/1/3/3;">
     </div>
     <div id="zoomZone">
         <div id="spectrum">
@@ -68,7 +68,7 @@
                         <div class="node__shape node__shape--right node__shape--ideology"></div>
                         <div class="nodeInfo__text">Right-Wing</div>
                     </a>
-                    <a class="nodeInfo" target="_blank" title="Non-sided or multi-sided">
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Political_syncretism" target="_blank" title="Non-sided or multi-sided">
                         <div class="node__shape node__shape--grey node__shape--ideology"></div>
                         <div class="nodeInfo__text">Non-Sided or Multi-Sided</div>
                     </a>
@@ -100,23 +100,23 @@
                         <div class="node__shape node__shape--left node__shape--ideology"></div>
                         <div class="nodeInfo__text">Gauche</div>
                     </a>
-                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centre-left_politics" target="_blank" title="Centre Gauche">
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centre-left_politics" target="_blank" title="Centre-Gauche">
                         <div class="node__shape node__shape--centerLeft node__shape--ideology"></div>
-                        <div class="nodeInfo__text">Centre Gauche</div>
+                        <div class="nodeInfo__text">Centre-Gauche</div>
                     </a>
                     <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centrism" target="_blank" title="Centre">
                         <div class="node__shape node__shape--center node__shape--ideology"></div>
                         <div class="nodeInfo__text">Centre</div>
                     </a>
-                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centre-right_politics" target="_blank" title="Centre Droite">
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Centre-right_politics" target="_blank" title="Centre-Droite">
                         <div class="node__shape node__shape--centerRight node__shape--ideology"></div>
-                        <div class="nodeInfo__text">Centre Droite</div>
+                        <div class="nodeInfo__text">Centre-Droite</div>
                     </a>
                     <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Right-wing_politics" target="_blank" title="Droite">
                         <div class="node__shape node__shape--right node__shape--ideology"></div>
                         <div class="nodeInfo__text">Droite</div>
                     </a>
-                    <a class="nodeInfo" target="_blank" title="Non-Campé/Multi-Camp">
+                    <a class="nodeInfo" href="https://en.wikipedia.org/wiki/Political_syncretism" target="_blank" title="Non-Campé/Multi-Camp">
                         <div class="node__shape node__shape--grey node__shape--ideology"></div>
                         <div class="nodeInfo__text">Non-Campé/Multi-Camp</div>
                     </a>
